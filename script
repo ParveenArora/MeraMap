@@ -1,0 +1,75 @@
+#!/bin/sh
+
+echo "*************************************************************"
+echo " Your request for installation of MeraMap has beem processed "
+echo "*************************************************************"
+sudo pt-get update
+sudo apt-get upgrade
+echo "Sytem has been updated and upgraded"
+apt-get install subversion autoconf screen munin
+cd ~
+mkdir src bin planet
+cd planet
+echo "Downloading Planet file for India"
+wget http://download.geofabrik.de/osm/asia/india.osm.bz2
+echo "Installing PostgreSQL"
+sudo apt-get install postgresql-8.4-postgis postgresql-contrib-8.4
+sudo apt-get install postgresql-server-dev-8.4
+sudo apt-get install build-essential libxml2-dev libtool
+sudo apt-get install libgeos-dev libpq-dev libbz2-dev proj
+cd ~/bin
+sudo apt-get install osm2pgsql
+sudo rm /etc/postgresql/8.4/main/postgresql.conf
+wget https://github.com/ParveenArora/MeraMap/blob/master/postgresql.conf
+sudo sh -c "echo 'kernel.shmmax=268435456' > /etc/sysctl.d/60-shmmax.conf"
+sudo service procps start
+echo "Restarting postgres to enableing the changes "
+sudo /etc/init.d/postgresql-8.4 restart
+sudo -u postgres -i
+createuser osm
+createdb -E UTF8 -O osm gis
+createlang plpgsql gis
+exit
+psql -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql -d gis
+echo "ALTER TABLE geometry_columns OWNER TO osm; ALTER TABLE spatial_ref_sys OWNER TO osm;" | psql -d gis
+psql -f /usr/share/postgresql/8.4/contrib/_int.sql -d gis
+psql -f ~/bin/osm2pgsql/900913.sql -d gis
+cd ~/bin/osm2pgsql
+./osm2pgsql -S default.style --slim -d gis -C 2048 ~/planet/planet-100217.osm.bz2
+echo "Installing Dependencies for mapnik Library"
+sudo apt-get install libltdl3-dev libpng12-dev libtiff4-dev libicu-dev
+sudo apt-get install libboost-python1.40-dev python-cairo-dev python-nose
+sudo apt-get install libboost1.40-dev libboost-filesystem1.40-dev
+sudo apt-get install libboost-iostreams1.40-dev libboost-regex1.40-dev libboost-thread1.40-dev
+sudo apt-get install libboost-program-options1.40-dev libboost-python1.40-dev
+sudo apt-get install libfreetype6-dev libcairo2-dev libcairomm-1.0-dev
+sudo apt-get install libgeotiff-dev libtiff4 libtiff4-dev libtiffxx0c2
+sudo apt-get install libsigc++-dev libsigc++0c2 libsigx-2.0-2 libsigx-2.0-dev
+sudo apt-get install libgdal1-dev python-gdal
+sudo apt-get install imagemagick ttf-dejavu
+echo"Build Mapnik from Source"
+cd ~/src
+svn co http://svn.mapnik.org/tags/release-0.7.1/ mapnik
+cd mapnik
+python scons/scons.py configure INPUT_PLUGINS=all OPTIMIZATION=3 SYSTEM_FONTS=/usr/share/fonts/truetype/
+python scons/scons.py
+sudo python scons/scons.py install
+sudo ldconfig
+cd ~/bin
+svn co http://svn.openstreetmap.org/applications/rendering/mapnik
+cd ~/bin/mapnik
+mkdir world_boundaries
+wget http://tile.openstreetmap.org/world_boundaries-spherical.tgz
+tar xvzf world_boundaries-spherical.tgz
+wget http://tile.openstreetmap.org/processed_p.tar.bz2
+tar xvjf processed_p.tar.bz2 -C world_boundaries
+wget http://tile.openstreetmap.org/shoreline_300.tar.bz2
+tar xjf shoreline_300.tar.bz2 -C world_boundaries
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/...
+unzip 10m-populated-places.zip -d world_boundaries
+wget http://www.naturalearthdata.com/http//www.naturalearthdata.com/download/...
+unzip 110m-admin-0-boundary-lines.zip -d world_boundaries
+cd ~/bin/mapnik
+./generate_xml.py --dbname gis --user username --accept-none
+./generate_image.py
+
