@@ -1,3 +1,6 @@
+cd ~
+wget http://202.164.53.116/~parveen/mm/meramap.tar.gz
+tar -zxvf meramap.tar.gz
 sudo apt-get update
 sudo apt-get upgrade
 cd subversion
