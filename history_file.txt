@@ -1,0 +1,484 @@
+ls
+cd /
+ls
+cd boo
+cd boot/
+ls
+cd grub/
+ls
+vi grub.cfg 
+vi *.list
+exit
+ls
+cd /
+lss
+ls
+cd /root/
+ls
+cd ..
+ls
+cd boot/
+ls
+cd grub/
+ls
+vim grub.cfg
+sudo apt-get install vim
+ls
+exit
+sudo -s
+exit
+ping 8.8.8.8
+sudo /etc/init.d/networking restart
+exit
+terminal
+google
+sudo apt-get update
+exit
+sudo /etc/init.d/dbus restart
+sudo apt-get update
+nm-applet
+network-manager-gnome
+wicd
+sudo wicd
+sudo init 6
+sudo /etc/init.d/networking restart
+xterm
+sudo gnome-panel & exit
+gnome terminal
+sudo gnome terminal
+sudo apt-get install gnome-terminal-data
+sudo apt-get install gnome-terminal
+sudo apt-get install terminal
+sudo apt-get install kde-terminal
+sudo aprt-get auto remove gnome-terminal
+sudo aprt-get autoremove gnome-terminal
+sudo aprt autoremove gnome-terminal
+sudo apt-get autoremove gnome-terminal
+ls
+sudo ap-get autoclean
+sudo ap-get auto clean
+sudo ap-get remove gnome-terminal
+sudo ap-get install gnome-terminal
+sudo apt-get update
+sudo apt-get install cheese
+ls
+ls -l
+ls
+rm examples.desktop 
+rm TranscodedWallpaper.jpg 
+ls
+cd Desktop/
+ls
+sudo apt-get install vim
+sudo aptitude install build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon
+sudo aptitude install sun-java6-jre sun-java6-plugin equivs
+sudo apt-get update
+vim install.sh
+sudo chmod +x install.sh 
+./install.sh 
+cd MeraMap/ls
+cd MeraMap
+ls
+git log
+ls
+vim bbox.sh
+ls
+vim making
+exit
+cd
+sudo apt-get install subversion autoconf screen munin-node munin htop
+cd ~
+mkdir src bin planet
+cd planet
+wget http://download.geofabrik.de/osm/asia/india.osm.bz2
+sudo apt-get install postgresql-8.4-postgis postgresql-contrib-8.4
+sudo apt-get install postgresql-server-dev-8.4
+sudo apt-get install build-essential libxml2-dev libtool
+sudo apt-get install libgeos-dev libpq-dev libbz2-dev proj
+cd ~/bin/
+ls
+sudo apt-get install osm2pgsql
+sudo rm /etc/postgresql/8.4/main/postgresql.conf
+cd
+cd /etc/postgresql/8.4/main/
+ls
+wget https://github.com/ParveenArora/MeraMap/blob/master/postgresql.conf
+sudo wget https://github.com/ParveenArora/MeraMap/blob/master/postgresql.conf
+ls
+ls -l
+sudo sh -c "echo 'kernel.shmmax=268435456' > /etc/sysctl.d/60-shmmax.conf"
+sudo service procps start
+sudo /etc/init.d/postgresql-8.4 restart
+ls
+vim postgresql.conf 
+rm postgresql.conf 
+ls
+sudo rm postgresql.conf 
+ls
+vim postgresql.conf
+sudo vim postgresql.conf
+ls
+lsm-l
+ls -l
+sudo /etc/init.d/postgresql-8.4 restart
+sudo -u postgres -i
+psql -f /usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql -d gis
+sudo -u postgres -i
+find / -name 'mypage.htm' > search.txt
+sudo find / -name 'mypage.htm' > search.txt
+sudo find / -name 'mypage.htm' < search.txt
+sudo find / -name 'postgis.sql' 
+psql -f /usr/share/postgresql/8.4/contrib/postgis.sql -d gis
+exit
+sudo apt-get install postgresql-8.4-postgis postgresql-contrib-8.4
+exit
+sudo /etc/init.d/networking restart
+ls
+cd src/
+ls
+svn co http://svn.mapnik.org/trunk/ mapnik
+ls
+rm -rf mapnik/
+svn co http://svn.mapnik.org/tags/release-0.7.1/ mapnik
+cd mapnik/
+ls
+python scons/scons.py configure INPUT_PLUGINS=all OPTIMIZATION=3 SYSTEM_FONTS=/usr/share/fonts/truetype/
+python scons/scons.py
+cd 
+sudo apt-get install libsigc++-dev libsigc++0c2 libsigx-2.0-2 libsigx-2.0-dev
+sudo apt-get install libgdal1-dev python-gdal
+sudo apt-get install libboost1.40-dev libboost-filesystem1.40-dev
+sudo apt-get install libboost-iostreams1.40-dev libboost-regex1.40-dev libboost-thread1.40-dev
+sudo apt-get install libboost-program-options1.40-dev libboost-python1.40-dev
+./generate_image.py 
+./generate_image.py parveen
+./generate_image.py gis
+psql -d gis
+~exit
+exit
+sudo /etc/init.d/networking restart
+ls
+ld
+ls
+cd /etc/apt
+ls
+ls -l sources.list
+cd ~/bin/mapnik
+psql -d mapnik
+psql -d gis
+select highway,count(highway) FROM planet_osm_line group by highway order by count(highway) desc; 
+vim /etc/postgresql/8.4/main/pg_hba.conf 
+cd /etc/postgresql
+ls
+cd 8.4/
+ls
+cd mail
+cd main
+ks
+ls
+vim pg_hba.conf 
+sudo pg_hba.conf 
+sudo vim pg_hba.conf 
+ls
+cd
+cd ~/bin/mapnik/
+ls
+./generate_xml.py --dbname gis --user username --accept-none
+./generate_image.py
+./generate_xml.py --dbname gis --user parveen --accept-none
+./generate_image.py
+sudo -u postgres -s -H
+ls
+./generate_xml.py --dbname gis --user parveen --accept-none
+./generate_image.py
+cd
+sudo tasksel
+LS
+Lls
+ls
+sudo find / -name 'gnome' 
+locate .deb | grep apt
+locate .deb | grep apt | grep gnome
+
+ls
+cd Desktop/
+ls
+cd gsoc/
+ls
+svn checkout http://townguide.googlecode.com/svn/trunk/ townguide-read-only
+ls
+cd townguide-read-only/
+ls
+vim osm.xml 
+ls
+sudo ifconfig eth0 down
+sudo ifconfig eth0 up
+ls
+sls
+ll
+sudo ifconfig eth0 down
+sudo ifconfig eth0 up
+sudo ifconfig eth0 down
+sudo ifconfig eth0 netmask 255.255.255.0 up 192.168.7.78
+history
+ls
+git@github.com:ParveenArora/python_basics.git
+git clone git@github.com:ParveenArora/python_basics.git
+ls
+cd MeraMap/
+ls
+cd
+cd python_basics/
+ls
+git pull
+ls
+vim git_commands.txt
+git status
+git add git_commands.txt
+git commit -m 'git pull'
+git push origin master
+lls
+cd ~/bin/mapnik
+./generate_xml.py --dbname gis --user username --accept-non
+./generate_image.py
+./generate_xml.py --dbname gis --user parveen --accept-non
+./generate_image.py
+./generate_xml.py --dbname gis --user postgres --accept-non
+./generate_image.py
+sudo -u postgres -i
+sudo apt-get install phppgadmin
+sudo ln -s /etc/phppgadmin/apache.conf /etc/apache2/conf.d/phppgadmin.conf
+sudo gedit /usr/share/phppgadmin/conf/config.inc.php
+sudo /etc/init.d/apache2 reload
+psql
+gis
+psql gis
+su - postgres
+sudo -u postgres -i
+man gis
+man postgis
+sudo -u postgres -i
+cd ~/bin/osm2pgsql
+./osm2pgsql -S default.style --slim -d gis -C 2048 ~/planet/india.osm.bz2 
+ls
+cd ~/bin/mapnik
+./generate_xml.py --dbname gis --user parveen --accept-none
+./generate_image.py
+ls
+cd
+sudo apt-get install sun-java6-jdk
+ls
+cd osmosis-0.31/
+ls
+./bin/osmosis --read-xml /home/parveen/planet/india.osm.bz2 --bounding-box left=75.16 bottom=30.29 right=76.69 top=31.48 --write-xml /home/parveen/GreatLakes.osm.gz
+ls
+time ./osm2pgsql --slim -d gis GreatLakes.osm.gz
+cd
+ls
+cd bi
+cd bin
+ls
+cd mapnik/
+ls
+cd
+ls
+cd src/
+ls
+cd mapnik/
+ls
+cd
+ls
+cd ~/bin/osm2pgsql
+time ./osm2pgsql --slim -d gis GreatLakes.osm.gz
+time ./osm2pgsql --slim -d gis /home/parveen/GreatLakes.osm.gz
+cd
+vim ~/mapnik
+ls
+cd bin
+ls
+cd mapnik/
+ls
+cd ..
+ls
+cd ..
+ls
+cd srq
+cd src/
+ls
+cd mapnik/
+ls
+cd
+ls
+cd planet/
+ls
+cd..
+cd ..
+ls
+cd bin
+ls
+cd bin
+ls
+cd mapnik/
+ls
+cd archive/
+ls
+sudo vim set-mapnik-env 
+cd ~/mapnik
+ls
+cp generate_tiles.py z0_generate_tiles.py
+ls
+vim z0_generate_tiles.py 
+ls
+cd symbols/
+ls
+cd ..
+ls
+cd archive/
+ls
+source set-mapnik-env
+./customize-mapnik-map >$MAPNIK_MAP_FILE
+sudo find / -name 'osm.xml' 
+cd ..
+ls
+cd ..
+ls
+cd map
+ls
+cd bin/
+ks
+ls
+cd mapnik/
+ls
+cd archive/
+ls
+vim customize-mapnik-map 
+vim set
+sudo vim set-mapnik-env 
+cd ..
+ls
+cd ..
+ls
+cd mapnik/
+ls
+cd archive/
+ls
+source set-mapnik-env
+cd ..
+ls
+cd archive/
+ls
+./customize-mapnik-map >$MAPNIK_MAP_FILE
+cd ..
+lsa
+ls
+./z0_generate_tiles.py
+cd
+ssh parveen@202.164.53.116
+cd ..
+ls
+cd archive/
+ls
+cd ..
+ls
+htop
+ls
+htop
+sudo apt-get install ubuntu-desktop
+sudo apt-get install gnome
+sudo tasksel
+ls
+sls
+ls
+ping yahoo.com
+ping yahoo.com\
+ping yahoo.com
+ping yahoo.com\
+firefox
+ssh -X parveen@127.0.0.1
+reboot
+sudo reboot
+cd /etc/apache2/mods-enabled
+sudo ln -s ../mods-available/userdir.conf userdir.conf
+sudo ln -s ../mods-available/userdir.load userdir.load
+sudo /etc/init.d/apache2 restart 
+cd
+mkdir public_html
+d /etc/apache2/mods-enabled
+cd /etc/apache2/mods-enabled
+sudo ln -s ../mods-available/userdir.conf userdir.conf
+sudo ln -s ../mods-available/userdir.load userdir.load
+sudo /etc/init.d/apache2 restart
+cd
+sudo vim /etc/apache2/mods-available/php5.conf
+sudo /etc/init.d/apache2 restart
+cd MeraMap/
+ks
+ls
+cd edited_files/
+ks
+cd
+cd MeraMap/
+cd edited_files/ configuration_files
+ks
+ls
+cd ..
+cp edited_files/ configuration_files
+cp edited_files -r configuration_files
+git rm edited_files/
+git rm -r edited_files/
+ls
+cd configuration_files/
+ls
+vim README
+ls
+cd ..
+ls
+cd bin
+ls
+cd mapnik/
+ls
+./generate_image.py 
+./generate_tiles.py 
+source set-mapnik-env
+ls
+cd archive/
+ls
+source set-mapnik-env
+./customize-mapnik-map >$MAPNIK_MAP_FILE
+cd ..
+./my_generate_image.py
+source set-mapnik-env
+ls
+cd archive/
+ls
+source set-mapnik-env
+./customize-mapnik-map >$MAPNIK_MAP_FILE
+./z0_generate_tiles.py
+ls
+cd ..
+ls
+./z0_generate_tiles.py
+htop
+ssh parveen@202.164.53.116
+cd
+cd MeraMap/
+ls
+git status 
+git add configuration_files/
+git commit -m 'Little Description of Configuration Files'
+git push origin master
+ls
+cd ..
+ls
+cd carmetal_config/
+ls
+cd ..
+ls
+cd MeraMap/
+ls
+git status
+git rm postgresql.conf
+ls
+sudo /etc/init.d/networking restart
+sudo apt-get install php5
+sudo tasksel
