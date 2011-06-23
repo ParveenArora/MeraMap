@@ -64,3 +64,32 @@ sudo cp ~/mm/configuration_files/generate_image.py ~/bin/mapnik/
 
 ./generate_xml.py --dbname gis --user username --accept-none
 ./generate_image.py
+
+sudo apt-get install sun-java6-jdk
+wget http://gweb.bretth.com/osmosis-latest.tar.gz
+tar xvfz osmosis-latest.tar.gz
+cd osmosis-0.*
+
+./bin/osmosis --read-xml /home/'whoami'/india.osm.gz --bounding-box left=-94 bottom=38 right=-71.5 top=50 --write-xml ~/GreatLakes.osm.gz
+rm ~/bin/mapnik/archive/set-mapnik-env
+cd 
+cd mm/configuration_files
+sudo cp set-mapnik-env ~/bin/mapnik/archive
+cp z1_generate_tiles.py ~/bin/mapnik
+cd ~/bin/mapnik/archieve
+source set-mapnik-env
+./customize-mapnik-map >$MAPNIK_MAP_FILE
+cd ..
+./z1_generate_tiles.py
+
+
+
+
+
+
+
+
+
+
+
+
