@@ -18,16 +18,8 @@ cd ~/bin/osm2pgsql
 make
 
 
-
-
-echo "Difference in files"
-diff -u /etc/postgresql/8.4/main/postgresql.conf /configuration_files/settings_postgresql.conf > postgresql.patch
-
-
-echo "Apply patch.............. "
-patch /etc/postgresql/8.4/main/postgresql.conf < postgresql.patch
-echo "Done, Change are made in original File"
-
+sudo rm /etc/postgresql/8.4/main/postgresql.conf
+sudo cp configuration_files/posgresql.conf /etc/postgresql/8.4/main/postgresql.conf
 
 sudo sh -c "echo 'kernel.shmmax=268435456' > /etc/sysctl.d/60-shmmax.conf"
 sudo service procps start
