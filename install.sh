@@ -3,14 +3,16 @@ wget http://202.164.53.116/~parveen/mm/meramap.tar.gz
 tar -zxvf meramap.tar.gz
 sudo apt-get update
 sudo apt-get upgrade
-cd subversion
+cd mm/subversion
 sudo dpkg -i subversion_1.6.6dfsg-2ubuntu1.*.*
 sudo apt-get install autoconf screen munin-node munin htop
 cd ~
-mkdir src bin planet
-cd postgresql
+cd mm/postgresql
 sudo dpkg -i *.*
 
+cp -r mm/bin ~/
+cp -r mm/planet ~/
+cp -r mm/src ~/
 
 cd ~/bin/osm2pgsql
 ./autogen.sh
