@@ -1,0 +1,13 @@
+build-essential: If you do not plan to build Debian packages, you don't need this package. Starting with dpkg (>= 1.14.18) this package is required for building Debian packages.
+
+This package contains an informational list of packages which are considered essential for building Debian packages. This package also depends on the packages on that list, to make it easy to have the build-essential packages installed.
+
+If you have this package installed, you only need to install whatever a package specifies as its build-time dependencies to build the package. Conversely, if you are determining what your package needs to build-depend on, you can always leave out the packages this package depends on.
+
+libxml2-dev:XML is a metalanguage to let you design your own markup language. A regular markup language defines a way to describe information in a certain class of documents (eg HTML). XML lets you define your own customized markup languages for many classes of document. It can do this because it's written in SGML, the international standard metalanguage for markup languages.
+
+Install this package if you wish to develop your own programs using the GNOME XML library.
+
+libtool:GNU libtool is a generic library support script. Libtool hides the complexity of using shared libraries behind a consistent, portable interface.
+
+
