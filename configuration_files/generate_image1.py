@@ -26,12 +26,12 @@ if __name__ == "__main__":
     #---------------------------------------------------
     #  Change this to the bounding box you want
     #
-    ll = (75.6683, 30.8026, 76.0679, 31.9897)
+    ll = (75.11, 30.35, 76.673, 31.558)
     #---------------------------------------------------
 
     z = 10
     imgx = 500 * z
-    imgy = 500 * z
+    imgy = 1000 * z
 
     m = mapnik.Map(imgx,imgy)
     mapnik.load_map(m,mapfile)
