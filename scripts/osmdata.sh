@@ -1,9 +1,9 @@
 #!/bin/bash
-if [ -d ~/plane ];
+if [ -d ~/planet ];
 then
     echo "File exists"
 else
-    mkdir ~/plane
+    mkdir ~/planet
 
 fi
 
@@ -11,6 +11,6 @@ if [ -f ~/planet/ludhiana.osm.bz2 ];
 then
     echo "OSM Data File for Ludhiana exists"
 else 
-    cd ~/plane
+    cd ~/planet
     wget https://github.com/ParveenArora/MeraMap/blob/master/osm_data_file/ludhiana.osm.bz2
 fi
