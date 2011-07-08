@@ -18,3 +18,5 @@ FILE_DEFAULT_FILE_STYLE=default.style
 SCRIPT_OSM2PGSQL=osm2pgsql.sh
 SCRIPT_MAPNIK_TOOLS=mapnik_tools.sh
 SCRIPT_MAPNIK_TILES=mapnik_tiles.sh
+PUBLIC_HTML=~/public_html
+SCRIPT_RUNMAP=run_map.sh
