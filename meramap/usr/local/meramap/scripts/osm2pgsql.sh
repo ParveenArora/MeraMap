@@ -1,5 +1,5 @@
 #!/bin/bash
-source variables.sh
+source $MERAMAP_SCRIPT/variables.sh
 
 if [ -e $MERAMAP/$LOGFILE_OSM2PGSQL ]; then rm $MERAMAP/$LOGFILE_OSM2PGSQL; fi
 echo $0 >> $MERAMAP/$LOGFILE_OSM2PGSQL 2>&1

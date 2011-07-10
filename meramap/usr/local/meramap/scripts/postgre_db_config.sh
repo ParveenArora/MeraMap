@@ -8,7 +8,7 @@
 #       06 July 2011   Modified to work on multiple Ubuntu versions
 #                       by Graham Jones.
 
-source variables.sh
+source $MERAMAP_SCRIPT/variables.sh
 if [ -e $MERAMAP/$LOGFILE ]; then rm $MERAMAP/$LOGFILE; fi
 
 echo $0 >> $MERAMAP/$LOGFILE 2>&1

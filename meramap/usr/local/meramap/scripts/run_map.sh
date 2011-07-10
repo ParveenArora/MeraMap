@@ -1,5 +1,5 @@
 #!/bin/bash
-source variables.sh
+source $MERAMAP_SCRIPT/variables.sh
 if [ -d $PUBLIC_HTML ];
 then
     cp -r map $PUBLIC_HTML

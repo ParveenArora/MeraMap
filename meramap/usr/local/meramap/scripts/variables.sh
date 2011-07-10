@@ -1,7 +1,10 @@
 #!/bin/bash
 #This file contains all the variables using in all the files
 
+#This is meramap directory in user's system
 MERAMAP=/usr/local/meramap
+
+MERAMAP_SCRIPT=/usr/local/meramap/scripts
 
 #Variables which are defineing log files.
 LOGFILE=postgres_meramap.log
