@@ -11,4 +11,5 @@ else
     sudo /etc/init.d/apache2 restart
 fi
 cp -r map $PUBLIC_HTML
-firefox http://localhost/~$USERNAME/map
+
+echo For see the working of map, follow the given link. http://localhost/~$USERNAME/map
