@@ -1,0 +1,12 @@
+./postinst
+/home/parveen/MeraMap/meramap/usr/local/meramap/scripts/postgre_patch.sh: 2: source: not found
+*********************************************
+* Configuring PostgreSQL Configuration FIle *
+*********************************************
+Creating patch............... 
+/home/parveen/MeraMap/meramap/usr/local/meramap/scripts/postgre_patch.sh: 9: cannot create /: Is a directory
+Applying Patch.............. 
+patch: **** read error : Is a directory
+procps stop/waiting
+ * Restarting PostgreSQL 8.4 database server
+   ...done.
