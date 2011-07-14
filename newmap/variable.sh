@@ -11,7 +11,8 @@ MERAMAP_SCRIPT=/usr/local/meramap/scripts   #Meramap Scripts Directory
 #Variables which are defineing log files. These all log files will be in the /usr/local/meramap
 LOGFILE=postgres_meramap.log       #Log file to which includes all the 
 LOGFILE_OSM2PGSQL=osm2pgsql.log    #Log file to load osm data into pgsql 
-LOGFILE_INST=meramap.log           #Whole Installation Log File     
+LOGFILE_INST=meramap.log           #Whole Installation Log File
+LOGFILE_TILES=tiles.log    
 
 #Variables Defining Database Username and Database Name
 DBNAME=meramap_dba                 #PostgreSQL Database Name
@@ -41,3 +42,6 @@ SCRIPT_OSM2PGSQL=osm2pgsql.sh
 #SCRIPT_MAPNIK_TOOLS=mapnik_tools.sh
 SCRIPT_MAPNIK_TILES=mapnik_tiles.sh
 SCRIPT_RUNMAP=run_map.sh
+
+SET_MAPNIK_ENV=mapnik/archive/set-mapnik-env
+MAPNIK_ARCHIVE=mapnik/archive/
