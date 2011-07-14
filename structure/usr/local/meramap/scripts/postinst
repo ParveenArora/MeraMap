@@ -10,10 +10,11 @@ if [ -e $LOGFILE_INST ]; then rm $LOGFILE_INST; fi #To check for log file If alr
 echo $0 >> $LOGFILE_INST 2>&1   # To create a new log file named meramap.log.
 echo postinst working.
 ##./$MERAMAP_SCRIPT/$FILE_SCRIPT_OSMDATA >> $LOGFILE_INST 2>&1   #This file check for the existence of planet folder in the home directory and planet file in that directory. If it already exists it will delete previous file and will replace it with the new one.
+if [ -e postgre_db_config.sh ]; then echo file present; fi
 
-sh $MERAMAP_SCRIPT/$FILE_POSTGRE_PATCH >> $LOGFILE_INST 2>&1    #This files configures the setting of Installed postgresql, in the file postgresql.conf
-
-sh $MERAMAP_SCRIPT/$FILE_POSTGRE_DB >> $LOGFILE_INST 2>&1       #This files configures the PostgreSQL Database, Create new user and database and enables postgis
+#sh $FILE_POSTGRE_PATCH >> $LOGFILE_INST 2>&1    #This files configures the setting of Installed postgresql, in the file postgresql.conf
+sh postgre_db_config.sh
+#sh postgres_config.sh >> $LOGFILE_INST 2>&1       #This files configures the PostgreSQL Database, Create new user and database and enables postgis
 
 #sh $MERAMAP_SCRIPT/$SCRIPT_OSM2PGSQL >> $LOGFILE_INST 2>&1      # This file is to load osm data file into  pgsql using osm2pgsql. 
 #./$MERAMAP_SCRIPT/$SCRIPT_MAPNIK_TOOLS >> $LOGFILE_INST 2>&1   #This file copeis the mapnik tools into bin direcory in the home of user.
