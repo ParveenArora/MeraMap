@@ -26,7 +26,7 @@ BIN=bin
 PUBLIC_HTML=~/public_html     #Direcory from where the map will work, Map folder will be placed in this dorectory.
 
 #These variables are to files with there path
-FILE_OSMDATAFILE=planet/ludhiana.osm.bz2                        #Ludhiana's OSM Data file, only to run the system
+FILE_OSMDATAFILE=ludhiana.osm.bz2                        #Ludhiana's OSM Data file, only to run the system
 FILE_POSTGRE_PATH=/etc/postgresql/8.4/main/postgresql.conf      #PostgreSQL Configuration File
 FILE_POSTGRE_CONFIG=postgresql_config.conf                      #PostgreSQL Configuration file with edited configuration, its difference with default file will be applied as patch to default file.
 FILE_DEFAULT_STYLE=/usr/share/osm2pgsql/osm2pgsql/default.style
