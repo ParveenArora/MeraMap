@@ -1,0 +1,8 @@
+#!/bin/bash
+source variable.sh
+echo $RAI
+if [ -e $LOGFILE_INST ]; then rm $LOGFILE_INST; fi #To check for log file If already exists or not. If it already exists then it will delete the previous log file. 
+echo $0 >> $LOGFILE_INST 2>&1 
+
+./$FILE_POSTGRE_PATCH >> $LOGFILE_INST 2>&1
+./$FILE_POSTGRE_DB >> $LOGFILE_INST 2>&1
