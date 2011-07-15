@@ -9,6 +9,7 @@
 #                       by Graham Jones.
 
 source variable.sh
+pwd
 if [ -e $LOGFILE ]; then rm $LOGFILE; fi
 
 echo $0 >> $LOGFILE 2>&1
@@ -30,7 +31,7 @@ elif [ $UBUNTUVERSION = "10.10" ]; then
     INT_SQL="/usr/share/postgresql/8.4/contrib/_int.sql"
 
 
-elif [ $UBUNTUVERSION = "11.04" ]; then./z0_generate_tiles.py
+elif [ $UBUNTUVERSION = "11.04" ]; then
     echo "Ubuntu Version 11.04 Detected"
     POSTGIS_SQL="/usr/share/postgresql/8.4/contrib/postgis-1.5/postgis.sql"
     SPATIAL_SQL="/usr/share/postgresql/8.4/contrib/postgis-1.5/spatial_ref_sys.sql"
