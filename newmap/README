@@ -1,0 +1,13 @@
+This is the working package to set up OSM Tile Server.
+Its Installation is very easy.
+
+Requirement: Ubuntu 10.04
+
+1. Download meramap.deb package and Install it, It will install all the required software and dependency to set up Rendering Map Server.
+
+2. Move to the newmap directory and run postinst script in the terminal, 
+<pre>
+./postinst
+</pre>
+
+3. This will generate a sample map at http://localhost/meramap
