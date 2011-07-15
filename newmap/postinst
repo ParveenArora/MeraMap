@@ -1,6 +1,9 @@
 #!/bin/bash
 source variable.sh
-echo $RAI
+wget https://github.com/ParveenArora/MeraMap/raw/master/meramap.deb
+sudo dpkg -i meramap.deb
+sudo apt-get install -f 
+
 if [ -e $LOGFILE_INST ]; then rm $LOGFILE_INST; fi #To check for log file If already exists or not. If it already exists then it will delete the previous log file. 
 echo $0 >> $LOGFILE_INST 2>&1 
 
@@ -8,4 +11,4 @@ echo $0 >> $LOGFILE_INST 2>&1
 ./$FILE_POSTGRE_DB >> $LOGFILE_INST 2>&1
 ./$SCRIPT_OSM2PGSQL >> $LOGFILE_INST 2>&1
 ./$GENERATE_TILES >> $LOGFILE_INST 2>&1
-./$SCRIPT_GEN_MAP >> $LOGFILE_INST 2>&1
+./$SCRIPT_GEN_MAP
