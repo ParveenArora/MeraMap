@@ -2,7 +2,10 @@ This will be a a one complete package , That will automatically install all the 
 
 
 Installation Guide:
-1. Go to the newmap folder
+1. Update and Upgrade your System with following commands.
 
-2 Run the master script
+$sudo apt-get update
+$sudo apt-get upgrade
+
+2. Go to the newmap folder, Run the master script
 ./postinst
