@@ -1,0 +1,62 @@
+./osm2pgsql.sh
+File exists
+Using projection SRS 900913 (Spherical Mercator)
+Setting up table: planet_osm_point
+NOTICE:  table "planet_osm_point" does not exist, skipping
+NOTICE:  table "planet_osm_point_tmp" does not exist, skipping
+Setting up table: planet_osm_line
+NOTICE:  table "planet_osm_line" does not exist, skipping
+NOTICE:  table "planet_osm_line_tmp" does not exist, skipping
+Setting up table: planet_osm_polygon
+NOTICE:  table "planet_osm_polygon" does not exist, skipping
+NOTICE:  table "planet_osm_polygon_tmp" does not exist, skipping
+Setting up table: planet_osm_roads
+NOTICE:  table "planet_osm_roads" does not exist, skipping
+NOTICE:  table "planet_osm_roads_tmp" does not exist, skipping
+Mid: pgsql, scale=100, cache=2048MB, maxblocks=262145*8192
+Setting up table: planet_osm_nodes
+NOTICE:  table "planet_osm_nodes" does not exist, skipping
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "planet_osm_nodes_pkey" for table "planet_osm_nodes"
+Setting up table: planet_osm_ways
+NOTICE:  table "planet_osm_ways" does not exist, skipping
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "planet_osm_ways_pkey" for table "planet_osm_ways"
+Setting up table: planet_osm_rels
+NOTICE:  table "planet_osm_rels" does not exist, skipping
+NOTICE:  CREATE TABLE / PRIMARY KEY will create implicit index "planet_osm_rels_pkey" for table "planet_osm_rels"
+
+Reading in file: ludhiana.osm.bz2
+Processing: Node(10k) Way(0k) Relation(0)Processing: Node(16k) Way(1k) Relation(0)Processing: Node(16k) Way(2k) Relation(0)Processing: Node(16k) Way(2k) Relation(6)  parse time: 1s
+
+Node stats: total(16652), max(1351218349)
+Way stats: total(2878), max(119997665)
+Relation stats: total(6), max(1559331)
+
+Going over pending ways
+processing way (0k)
+
+Going over pending relations
+
+node cache: stored: 16652(100.00%), storage efficiency: 0.90%, hit rate: 100.00%
+Stopping table: planet_osm_nodes
+Stopping table: planet_osm_ways
+Stopping table: planet_osm_rels
+Building index on table: planet_osm_ways
+Committing transaction for planet_osm_polygon
+Committing transaction for planet_osm_point
+Committing transaction for planet_osm_roads
+Building index on table: planet_osm_rels
+Sorting data and creating indexes for planet_osm_polygon
+Sorting data and creating indexes for planet_osm_roads
+Sorting data and creating indexes for planet_osm_point
+Committing transaction for planet_osm_line
+Stopped table: planet_osm_rels
+Stopped table: planet_osm_nodes
+Sorting data and creating indexes for planet_osm_line
+Stopped table: planet_osm_ways
+Completed planet_osm_polygon
+Completed planet_osm_roads
+Completed planet_osm_point
+Completed planet_osm_line
+
+osm2pgsql SVN version 0.70.5
+

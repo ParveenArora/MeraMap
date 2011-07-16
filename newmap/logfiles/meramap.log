@@ -1,0 +1,18 @@
+./postinst
+*********************************************
+* Configuring PostgreSQL Configuration FIle *
+*********************************************
+Creating patch............... 
+Applying Patch.............. 
+procps stop/waiting
+ * Restarting PostgreSQL 8.4 database server
+   ...done.
+/home/parveen/MeraMap/newmap
+logfile created
+meramap_dba
+meramap_user
+10.04
+Ubuntu Version 10.04 Detected
+Setting up database and user...
+Done!
+./postinst: line 17: ./: is a directory
