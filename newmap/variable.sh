@@ -40,9 +40,10 @@ FILE_POSTGRE_PATCH=postgres_patch.sh
 FILE_DEFAULT_FILE_STYLE=default.style
 SCRIPT_OSM2PGSQL=osm2pgsql.sh
 #SCRIPT_MAPNIK_TOOLS=mapnik_tools.sh
-SCRIPT_MAPNIK_TILES=mapnik_tiles.sh
+#SCRIPT_MAPNIK_TILES=mapnik_tiles.sh
 SCRIPT_RUNMAP=run_map.sh
 SCRIPT_GEN_MAP=generate_map.sh
+SCRIPT_GENERATE_TILES=generate_tiles.sh
 
 SET_MAPNIK_ENV=mapnik/archive/set-mapnik-env
 MAPNIK_ARCHIVE=mapnik/archive/
