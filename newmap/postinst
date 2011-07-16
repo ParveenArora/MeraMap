@@ -3,7 +3,7 @@ source variable.sh
 
 if [ -e $MERAMAP_DEB  ]; then rm $MERAMAP_DEB; fi
 
-wget https://github.com/ParveenArora/MeraMap/raw/master/meramap.deb
+#wget https://github.com/ParveenArora/MeraMap/raw/master/meramap.deb
 
 sudo dpkg -i meramap.deb
 sudo apt-get install -f 
