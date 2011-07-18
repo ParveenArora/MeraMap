@@ -49,3 +49,5 @@ SET_MAPNIK_ENV=mapnik/archive/set-mapnik-env
 MAPNIK_ARCHIVE=mapnik/archive/
 
 MERAMAP_DEB=meramap.deb
+
+PATH_MERAMAP=/var/www/meramap
