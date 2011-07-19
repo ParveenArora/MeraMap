@@ -43,18 +43,18 @@ Stopping table: planet_osm_rels
 Building index on table: planet_osm_ways
 Committing transaction for planet_osm_polygon
 Committing transaction for planet_osm_point
-Committing transaction for planet_osm_roads
 Building index on table: planet_osm_rels
+Committing transaction for planet_osm_roads
 Sorting data and creating indexes for planet_osm_polygon
 Sorting data and creating indexes for planet_osm_roads
+Stopped table: planet_osm_nodes
 Sorting data and creating indexes for planet_osm_point
 Committing transaction for planet_osm_line
 Stopped table: planet_osm_rels
-Stopped table: planet_osm_nodes
 Sorting data and creating indexes for planet_osm_line
 Stopped table: planet_osm_ways
-Completed planet_osm_polygon
 Completed planet_osm_roads
+Completed planet_osm_polygon
 Completed planet_osm_point
 Completed planet_osm_line
 

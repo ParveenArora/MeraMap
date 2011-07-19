@@ -1,4 +1,16 @@
 ./postinst
+ * Restarting web server apache2
+[Tue Jul 19 11:25:37 2011] [warn] The Alias directive in /etc/apache2/conf.d/phppgadmin.conf at line 1 will probably never match because it overlaps an earlier Alias.
+apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1 for ServerName
+ ... waiting [Tue Jul 19 11:25:38 2011] [warn] The Alias directive in /etc/apache2/conf.d/phppgadmin.conf at line 1 will probably never match because it overlaps an earlier Alias.
+apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.1 for ServerName
+   ...done.
+(Reading database ... 284172 files and directories currently installed.)
+Preparing to replace meramap 002 (using meramap.deb) ...
+Unpacking replacement meramap ...
+Setting up meramap (001) ...
+Congratulations, All the MeraMap Components has been Installed
+
 *********************************************
 * Configuring PostgreSQL Configuration FIle *
 *********************************************
@@ -15,4 +27,8 @@ meramap_user
 Ubuntu Version 10.04 Detected
 Setting up database and user...
 Done!
-./postinst: line 17: ./: is a directory
+./generate_tiles.sh: line 8: mapnik/archive/set-mapnik-env: No such file or directory
+./generate_tiles.sh: line 9: cd: mapnik/archive/: No such file or directory
+./generate_tiles.sh: line 11: $MAPNIK_MAP_FILE: ambiguous redirect
+./generate_tiles.sh: line 13: logfiles/tiles.log: No such file or directory
+./generate_tiles.sh: line 14: ./z0_generate_tiles.py: No such file or directory

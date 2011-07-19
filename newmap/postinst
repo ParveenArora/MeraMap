@@ -10,7 +10,7 @@ source variable.sh
 
 if [ -e $LOGFILE_INST ]; then rm $LOGFILE_INST; fi #To check for log file If already exists or not. If it already exists then it will delete the previous log file. 
 echo $0 >> $LOGFILE_INST 2>&1 
-sudo apt-get install apache2
+#sudo apt-get install apache2
 sudo /etc/init.d/apache2 restart >> $LOGFILE_INST 2>&1
 sudo dpkg -i meramap.deb >> $LOGFILE_INST 2>&1
 sudo apt-get install -f
