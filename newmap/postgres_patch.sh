@@ -12,4 +12,3 @@ patch $FILE_POSTGRE_PATH < $FILE_PATCH
 sudo sh -c "echo 'kernel.shmmax=268435456' > /etc/sysctl.d/60-shmmax.conf"
 sudo service procps start
 sudo /etc/init.d/postgresql-8.4 restart
-

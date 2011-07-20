@@ -12,5 +12,3 @@ pwd >> $LOGFILE_TILES 2>&1
 cd ..
 pwd >> $LOGFILE_TILES 2>&1
 ./z0_generate_tiles.py
-
-

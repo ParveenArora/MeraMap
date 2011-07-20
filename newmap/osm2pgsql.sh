@@ -11,4 +11,3 @@ then
 else
     osm2pgsql -S $FILE_DEFAULT_FILE_STYLE --slim -d $DBNAME -C 2048 $FILE_OSMDATAFILE >> $LOGFILE_OSM2PGSQL 2>&1
 fi
-

@@ -51,3 +51,5 @@ MAPNIK_ARCHIVE=mapnik/archive/
 MERAMAP_DEB=meramap.deb
 
 PATH_MERAMAP=/var/www/meramap
+
+PATH_OF_TILE=/var/www/OSMAP/9
