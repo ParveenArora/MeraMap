@@ -45,11 +45,11 @@ fi
 echo "Setting up database and user..."
 
 
-dropdb $DBNAME >> $LOGFILE 2>&1
-dropuser $DBUSER >> $LOGFILE 2>&1
-createdb $DBNAME >> $LOGFILE 2>&1
-createuser --no-createdb --no-superuser --no-createrole $DBUSER >> $LOGFILE 2>&1
-createlang plpgsql $DBNAME; >> $LOGFILE 2>&1
+sudo -u postgres dropdb $DBNAME >> $LOGFILE 2>&1
+sudo -u postgres dropuser $DBUSER >> $LOGFILE 2>&1
+sudo -u postgres createdb $DBNAME >> $LOGFILE 2>&1
+sudo -u postgres createuser --no-createdb --no-superuser --no-createrole $DBUSER >> $LOGFILE 2>&1
+sudo -u postgres createlang plpgsql $DBNAME; >> $LOGFILE 2>&1
 psql -f $POSTGIS_SQL -d $DBNAME >> $LOGFILE 2>&1
 psql -f $SPATIAL_SQL -d $DBNAME >> $LOGFILE  2>&1
 psql -f $INT_SQL -d $DBNAME >> $LOGFILE 2>&1

@@ -11,6 +11,3 @@ sudo ln -s ~/bin/mapnik/tiles /var/www/OSMAP
 
 if [ -d $PATH_OF_TILE ]; then echo "Congratulations, You Can check your Map Working at http://localhost/meramap"; fi
 
-
-
- 
