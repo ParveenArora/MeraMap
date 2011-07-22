@@ -14,7 +14,7 @@ echo $0 >> $LOGFILE_INST 2>&1
 
 sudo dpkg -i meramap.deb >> $LOGFILE_INST 2>&1  #This debian package is to install all the required dependencies and packages require, all the names of dependencies and packages can be found in the control file of this debian package.
 sudo apt-get install -f
-sudo /etc/init.d/apache2 restart >> $LOGFILE_INST 2>&1    #To restart apache
+sudo /etc/init.d/apache2 restart #>> $LOGFILE_INST 2>&1    #To restart apache
 
 ./$FILE_POSTGRE_PATCH >> $LOGFILE_INST 2>&1         #Script to apply required configuration to user's default configuration of PostGreSQL.
 su -c ./$FILE_POSTGRE_DB >> $LOGFILE_INST 2>&1            #Script to check the version of ubuntu, to create database and user of postgresql and to enable creatlang.
