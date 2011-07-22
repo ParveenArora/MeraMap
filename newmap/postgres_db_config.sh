@@ -50,12 +50,12 @@ sudo -u postgres dropuser $DBUSER >> $LOGFILE 2>&1
 sudo -u postgres createdb $DBNAME >> $LOGFILE 2>&1
 sudo -u postgres createuser --no-createdb --no-superuser --no-createrole $DBUSER >> $LOGFILE 2>&1
 sudo -u postgres createlang plpgsql $DBNAME; >> $LOGFILE 2>&1
-psql -f $POSTGIS_SQL -d $DBNAME >> $LOGFILE 2>&1
-psql -f $SPATIAL_SQL -d $DBNAME >> $LOGFILE  2>&1
-psql -f $INT_SQL -d $DBNAME >> $LOGFILE 2>&1
+sudo -u postgres psql -f $POSTGIS_SQL -d $DBNAME >> $LOGFILE 2>&1
+sudo -u postgres psql -f $SPATIAL_SQL -d $DBNAME >> $LOGFILE  2>&1
+sudo -u postgres psql -f $INT_SQL -d $DBNAME >> $LOGFILE 2>&1
 
-echo "ALTER TABLE geometry_columns OWNER TO $DBUSER; ALTER TABLE spatial_ref_sys OWNER TO $DBUSER;" | psql -d $DBNAME >> $LOGFILE 2>&1
-psql -f 900913.sql -d $DBNAME >> $LOGFILE 2>&1
+sudo -u postgres echo "ALTER TABLE geometry_columns OWNER TO $DBUSER; ALTER TABLE spatial_ref_sys OWNER TO $DBUSER;" | sudo -u postgres psql -d $DBNAME >> $LOGFILE 2>&1
+sudo -u postgres psql -f 900913.sql -d $DBNAME >> $LOGFILE 2>&1
 
 echo "Done!"
 

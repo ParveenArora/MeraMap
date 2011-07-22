@@ -45,8 +45,8 @@ SCRIPT_RUNMAP=run_map.sh
 SCRIPT_GEN_MAP=generate_map.sh
 SCRIPT_GENERATE_TILES=generate_tiles.sh
 
-SET_MAPNIK_ENV=mapnik/archive/set-mapnik-env
-MAPNIK_ARCHIVE=mapnik/archive/
+SET_MAPNIK_ENV=bin/mapnik/archive/set-mapnik-env
+MAPNIK_ARCHIVE=bin/mapnik/archive/
 
 MERAMAP_DEB=meramap.deb
 
