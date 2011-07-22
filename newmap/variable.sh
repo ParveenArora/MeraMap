@@ -53,3 +53,5 @@ MERAMAP_DEB=meramap.deb
 PATH_MERAMAP=/var/www/meramap
 
 PATH_OF_TILE=/var/www/OSMAP/9
+
+SYM_LINK=/var/www/OSMAP
