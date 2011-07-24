@@ -10,7 +10,7 @@
 
 source variable.sh
 pwd
-if [ -e $LOGFILE ]; then rm $LOGFILE; fi
+if [ -e $LOGFILE ]; then rm -f $LOGFILE; fi
 
 echo $0 >> $LOGFILE 2>&1
 if [ -e $LOGFILE ]; then echo logfile created; fi

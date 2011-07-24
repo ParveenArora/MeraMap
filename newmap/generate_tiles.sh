@@ -1,7 +1,7 @@
 #!/bin/bash
 source variable.sh
 
-if [ -e $LOGFILE_TILES ]; then rm $LOGFILE_TILES; fi
+if [ -e $LOGFILE_TILES ]; then rm -r $LOGFILE_TILES; fi
 
 echo $0 >> $LOGFILE_TILES 2>&1
 

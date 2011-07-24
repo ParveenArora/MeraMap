@@ -1,7 +1,7 @@
 #!/bin/bash
 source variable.sh
 
-if [ -e $LOGFILE_OSM2PGSQL  ]; then rm $LOGFILE_OSM2PGSQL; fi
+if [ -e $LOGFILE_OSM2PGSQL  ]; then rm -f $LOGFILE_OSM2PGSQL; fi
 echo $0 >> $LOGFILE_OSM2PGSQL 2>&1
 
 if [ -f $FILE_DEFAULT_STYLE ];
