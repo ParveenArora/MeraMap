@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Mera Map Debian Package Installing....."
+cd /usr/local/bin/meramap/
+./postinst
