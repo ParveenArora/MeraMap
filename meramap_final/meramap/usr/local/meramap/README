@@ -1,0 +1,16 @@
+This is the working package to set up OSM Tile Server.
+Its Installation is very easy.
+
+Requirement: Ubuntu 10.04
+
+1. Update and Upgrade your System
+
+$sudo apt-get update
+$sudo apt-get upgrade
+
+2. Move to the newmap directory and run postinst script in the terminal along with installing all the dependencies
+
+./postinst
+
+
+3. This will generate a sample map at http://localhost/meramap
