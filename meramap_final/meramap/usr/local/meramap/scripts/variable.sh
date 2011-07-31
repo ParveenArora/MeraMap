@@ -54,4 +54,4 @@ PATH_MERAMAP=/var/www/meramap
 PATH_OF_TILE=/var/www/OSMAP/9
 
 SYM_LINK=/var/www/OSMAP
-TILES=/usr/local/bin/meramap/mapnik_tool/tiles
+TILES=/usr/local/meramap/mapnik_tool/tiles
