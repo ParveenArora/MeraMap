@@ -1,11 +1,40 @@
 This will be a a one complete package , That will automatically install all the packages with Install Script required to set up own customised server which will update automatically with sync. of OpenStreetMap data for an area specified by implementor, It will also suggest him/her and will also give a option to choose default options i.e weekly bases , with easy user interface and browser based customisation of Map Style, adding of Icons, local language and additional search feature.
 
+MeraMap Debian package is reqady to install on your systems. Follow the instructions given below to install the complete package.
+Note: This is complete debian package which includes both installation files and world_boundaries which are required for the Installation of MeraMap Sample Map.
+If you want to insltall them separately procedure for them is given below these.
 
-Installation Guide:
-1. Update and Upgrade your System with following commands.
+For Ubuntu 10.04 and 10.10
+http://202.164.53.116/~parveen/meramap_final/meramap.deb
+sudo apt-get update
+sudo apt-get -q 2 upgrade
+sudo dpkg -i meramap.deb
+sudo apt-get -f -q 2 install
 
-$sudo apt-get update
-$sudo apt-get upgrade
 
-2. Go to the newmap folder, Run the master script
-./postinst
+
+For Ubuntu 11.04:
+
+wget http://202.164.53.116/~parveen/meramap_final/meramap11.deb
+sudo apt-get update
+sudo apt-get -q 2 upgrade
+sudo dpkg -i meramap11.deb
+sudo apt-get -f -q 2 install
+
+
+
+If you have already Installed MeraMap or wants to install Installation Package and Shape Files (World Boundaries) you should follow the procedure as follows:
+
+First of all to install the shapefiles on 32 bit system:
+http://202.164.53.116/~parveen/meramap_final/world_bondaries.deb    (400MB)
+
+Install MeraMap:
+
+https://github.com/ParveenArora/MeraMap/raw/master/meramap_final/meramap.deb
+sudo apt-get update
+sudo apt-get -q 2 upgrade
+sudo dpkg -i meramap11.deb
+sudo apt-get -f -q 2 install
+
+
+
