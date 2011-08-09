@@ -33,8 +33,10 @@ Install MeraMap:
 https://github.com/ParveenArora/MeraMap/raw/master/meramap_final/meramap.deb
 sudo apt-get update
 sudo apt-get -q 2 upgrade
-sudo dpkg -i meramap11.deb
+sudo dpkg -i meramap.deb
 sudo apt-get -f -q 2 install
+
+Customisation Package to customise this example map will be released soon.
 
 
 
