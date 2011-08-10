@@ -1,0 +1,41 @@
+#header
+{
+background-color:#d0e4fe;
+}
+h1 {
+    clear:both;
+}
+#menu {
+    float:left;
+    position:relative;
+    top: 50%;
+    border-style:solid;
+}
+#sessioninfo {
+    float:right;
+}
+#main_body {
+    clear:both;
+    background-color:#00ff00;
+}
+label {
+    float:left;
+    width:160px;
+}
+#footer
+{
+clear:both;
+background-color:red;
+color:orange;
+text-align:center;
+}
+
+#mapdiv {
+   float:left;
+   width:600px;
+}
+#controlSidebar {
+   background-color:#a0a0a0;
+   float:left;
+   width:200px;
+}
