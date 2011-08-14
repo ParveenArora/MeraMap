@@ -102,14 +102,14 @@ function mapSubmitError(jqXHR,textStatus,errorThrown) {
 
 function map2JSON() {
 	mapObj = new Object();
-	mapObj.title = jQuery("#titleText").val();
+	//mapObj.title = jQuery("#titleText").val();
 	mapObj.bounds = map.getBounds();
-	mapObj.imgWidth = jQuery("#imgWidth").val();
-	mapObj.imgHeight = jQuery("#imgHeight").val();
-	mapObj.imgRes = jQuery("#imgResSelect").val();
-	mapObj.styleID = jQuery("#styleSelect").val();
-	mapObj.contours = jQuery("#contoursCheckbox").is(":checked");
-	mapObj.grid = jQuery("#gridCheckbox").is(":checked");
+	mapObj.MiniZoomLevel = jQuery("#imgWidth").val();
+	mapObj.MaxZoomLevel = jQuery("#imgHeight").val();
+	//mapObj.imgRes = jQuery("#imgResSelect").val();
+	//mapObj.styleID = jQuery("#styleSelect").val();
+	//mapObj.contours = jQuery("#contoursCheckbox").is(":checked");
+	//mapObj.grid = jQuery("#gridCheckbox").is(":checked");
 	var mapJSON = JSON.stringify(mapObj);
 	return mapJSON;
 }

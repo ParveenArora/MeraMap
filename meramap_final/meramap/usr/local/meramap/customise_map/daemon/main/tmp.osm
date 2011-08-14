@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<osm version="0.6" generator="Osmosis SNAPSHOT-r25956M" xapi:planetDate="2011-08-14T12:06:03Z" xmlns:xapi="http://jxapi.openstreetmap.org/">
+  <bound box="-0.14145,51.48363,-0.03845,51.52637" origin="Osmosis SNAPSHOT-r25956M"/>
+  <node id="593136659" version="1" timestamp="2009-12-16T07:02:12Z" uid="190196" user="FlorinMateiu" changeset="3384765" lat="-1.9244356" lon="41.7690167"/>
+  <node id="593204429" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="-1.7231304" lon="41.881692"/>
+  <node id="593204430" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="-1.493808" lon="42.0136044"/>
+  <node id="593204432" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="-1.3361348" lon="42.1044137"/>
+  <node id="593204434" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="-1.1096413" lon="42.2554438"/>
+  <node id="593204437" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="-0.8735728" lon="42.4447094"/>
+  <node id="593204439" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="-0.6355777" lon="42.6339751"/>
+  <node id="593204440" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="-0.4539675" lon="42.7821376"/>
+  <node id="593204441" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="-0.3947041" lon="42.8031671"/>
+  <node id="593204443" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="0.1673541" lon="43.3317726"/>
+  <node id="593204445" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="0.5258046" lon="43.674936"/>
+  <node id="593204447" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="0.9836335" lon="44.2035416"/>
+  <node id="593204449" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="1.4528667" lon="44.7589119"/>
+  <node id="593204452" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="1.7251894" lon="45.1689874"/>
+  <node id="593204453" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="2.0146687" lon="45.7061959"/>
+  <node id="593204454" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="2.2783081" lon="46.1449481"/>
+  <node id="593204456" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="2.6564877" lon="46.5139205"/>
+  <node id="593204458" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="3.0355061" lon="46.9478932"/>
+  <node id="593204460" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="3.5088518" lon="47.3398069"/>
+  <node id="593204463" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="3.8570294" lon="47.6724555"/>
+  <node id="593204464" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="4.2269904" lon="47.9917218"/>
+  <node id="593204465" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="4.4109526" lon="48.1618697"/>
+  <node id="593204467" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="4.7882641" lon="48.3750325"/>
+  <node id="593204468" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="4.8749407" lon="48.421871"/>
+  <node id="593204470" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="5.2063025" lon="48.6684898"/>
+  <node id="593204472" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="5.3119593" lon="48.7373137"/>
+  <node id="593204474" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="5.7686404" lon="49.0441534"/>
+  <node id="593204476" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="6.1479782" lon="49.2468015"/>
+  <node id="593204477" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="6.398821" lon="49.2783457"/>
+  <node id="593204478" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="6.8242095" lon="49.4637878"/>
+  <node id="593204479" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="6.8858979" lon="49.5259205"/>
+  <node id="593204481" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="7.2473238" lon="49.7524657"/>
+  <node id="593204483" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="7.383851" lon="49.8518779"/>
+  <node id="593204485" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="7.6690938" lon="49.9732756"/>
+  <node id="593204487" version="1" timestamp="2009-12-16T08:04:47Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="7.7183525" lon="50.0105552"/>
+  <node id="593204488" version="1" timestamp="2009-12-16T08:04:48Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="7.8566249" lon="50.0067316"/>
+  <node id="593204490" version="1" timestamp="2009-12-16T08:04:48Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="7.9910648" lon="50.2313651"/>
+  <node id="593204491" version="1" timestamp="2009-12-16T08:04:48Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="8.0913926" lon="50.300189"/>
+  <node id="593204492" version="1" timestamp="2009-12-16T08:04:48Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="8.264541" lon="50.3451156"/>
+  <node id="593204494" version="1" timestamp="2009-12-16T08:04:48Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="8.4054637" lon="50.4913664"/>
+  <node id="593204495" version="1" timestamp="2009-12-16T08:04:48Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="8.4707059" lon="50.5372489"/>
+  <node id="593204497" version="1" timestamp="2009-12-16T08:04:48Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="8.5803635" lon="50.5468078"/>
+  <node id="593204499" version="1" timestamp="2009-12-16T08:04:48Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="8.6692008" lon="50.5812197"/>
+  <node id="593204501" version="1" timestamp="2009-12-16T08:04:48Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="8.8335887" lon="50.6003375"/>
+  <node id="593204504" version="1" timestamp="2009-12-16T08:04:48Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="8.9384187" lon="50.7542353"/>
+  <node id="593221128" version="1" timestamp="2009-12-16T08:19:14Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.8642858" lon="44.0995554"/>
+  <node id="593221131" version="1" timestamp="2009-12-16T08:19:14Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.2384416" lon="43.76145"/>
+  <node id="593221136" version="1" timestamp="2009-12-16T08:19:14Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.0922988" lon="43.8604316"/>
+  <node id="593221138" version="1" timestamp="2009-12-16T08:19:15Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.6245402" lon="44.7483256"/>
+  <node id="593221140" version="1" timestamp="2009-12-16T08:19:15Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.6129815" lon="44.457261"/>
+  <node id="593221142" version="2" timestamp="2010-01-31T12:59:29Z" uid="160164" user="mahau" changeset="3758776" lat="11.680404" lon="43.5880083"/>
+  <node id="593221144" version="3" timestamp="2010-01-31T12:59:29Z" uid="160164" user="mahau" changeset="3758776" lat="11.7378179" lon="43.4257219"/>
+  <node id="593221149" version="2" timestamp="2010-01-31T12:59:30Z" uid="160164" user="mahau" changeset="3758776" lat="11.4032129" lon="43.7126351"/>
+  <node id="593221153" version="2" timestamp="2010-01-31T12:59:30Z" uid="160164" user="mahau" changeset="3758776" lat="11.6437786" lon="43.6335228"/>
+  <node id="593221154" version="1" timestamp="2009-12-16T08:19:15Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.670771" lon="45.0207699"/>
+  <node id="593221157" version="1" timestamp="2009-12-16T08:19:15Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.8652483" lon="45.2383333"/>
+  <node id="593221162" version="1" timestamp="2009-12-16T08:19:15Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.7632115" lon="45.1275916"/>
+  <node id="593221164" version="1" timestamp="2009-12-16T08:19:15Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.8556236" lon="45.3696554"/>
+  <node id="593221166" version="1" timestamp="2009-12-16T08:19:15Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.9547424" lon="46.3300705"/>
+  <node id="593221168" version="1" timestamp="2009-12-16T08:19:15Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.9682123" lon="46.2575494"/>
+  <node id="593221170" version="1" timestamp="2009-12-16T08:19:15Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.9595531" lon="46.0233257"/>
+  <node id="593221174" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.0480569" lon="45.8792634"/>
+  <node id="593221176" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.0557516" lon="45.788122"/>
+  <node id="593221178" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.0345906" lon="45.7126608"/>
+  <node id="593221180" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.8623609" lon="46.4437523"/>
+  <node id="593221182" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.0038083" lon="46.7220767"/>
+  <node id="593221187" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.2259454" lon="47.0739023"/>
+  <node id="593221189" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="9.0574307" lon="50.8283415"/>
+  <node id="593221192" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="9.1242024" lon="50.8303015"/>
+  <node id="593221194" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="9.1522621" lon="50.8352016"/>
+  <node id="593221196" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="9.2412645" lon="50.925363"/>
+  <node id="593221201" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="9.4375705" lon="51.0214045"/>
+  <node id="593221204" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="9.4955706" lon="51.0037642"/>
+  <node id="593221206" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="9.8404666" lon="51.0400248"/>
+  <node id="593221208" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.0151931" lon="51.0909856"/>
+  <node id="593221210" version="1" timestamp="2009-12-16T08:19:16Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.1637815" lon="51.0723653"/>
+  <node id="593221214" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.25348" lon="51.0615851"/>
+  <node id="593221216" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.2795168" lon="51.2272078"/>
+  <node id="593221218" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.2341922" lon="51.2683684"/>
+  <node id="593221220" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.2448006" lon="51.3947904"/>
+  <node id="593221222" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.2833739" lon="51.4898519"/>
+  <node id="593221226" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.3595423" lon="51.556493"/>
+  <node id="593221228" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.4482214" lon="51.5643331"/>
+  <node id="593221230" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.6640295" lon="51.2997289"/>
+  <node id="593221232" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.8998944" lon="51.2840487"/>
+  <node id="593221237" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.2067195" lon="51.3183492"/>
+  <node id="593221238" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.5484368" lon="51.5182723"/>
+  <node id="593221239" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="10.5966058" lon="51.4506513"/>
+  <node id="593221240" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.100954" lon="51.3340294"/>
+  <node id="593221241" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.1480725" lon="51.3291294"/>
+  <node id="593221242" version="1" timestamp="2009-12-16T08:19:17Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.2836155" lon="47.7608931"/>
+  <node id="593221243" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.370099" lon="47.5854703"/>
+  <node id="593221244" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.3633734" lon="47.4443481"/>
+  <node id="593221246" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.3508827" lon="47.3522267"/>
+  <node id="593221248" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.3451176" lon="48.1440791"/>
+  <node id="593221252" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.3076413" lon="48.0999785"/>
+  <node id="593221254" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.4440696" lon="48.3410623"/>
+  <node id="593221256" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.4930524" lon="48.7291484"/>
+  <node id="593221258" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.4911317" lon="48.6193866"/>
+  <node id="593221260" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.4114096" lon="48.9643521"/>
+  <node id="593221264" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.5401064" lon="49.4278994"/>
+  <node id="593221266" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.6840999" lon="49.909087"/>
+  <node id="593221269" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.6226718" lon="49.5249209"/>
+  <node id="593221270" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.796363" lon="50.2863929"/>
+  <node id="593221273" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.9287168" lon="50.3696942"/>
+  <node id="593221276" version="1" timestamp="2009-12-16T08:19:18Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="12.0667563" lon="50.4990563"/>
+  <node id="593221278" version="1" timestamp="2009-12-16T08:19:19Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="12.0054141" lon="50.4235951"/>
+  <node id="593221280" version="1" timestamp="2009-12-16T08:19:19Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.2643934" lon="51.2713085"/>
+  <node id="593221282" version="1" timestamp="2009-12-16T08:19:19Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.4565562" lon="51.3163892"/>
+  <node id="593221285" version="1" timestamp="2009-12-16T08:19:19Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.4834486" lon="51.3095291"/>
+  <node id="593221289" version="1" timestamp="2009-12-16T08:19:19Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.6255515" lon="51.4271309"/>
+  <node id="593221291" version="1" timestamp="2009-12-16T08:19:19Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.8414472" lon="51.4575114"/>
+  <node id="593221293" version="1" timestamp="2009-12-16T08:19:19Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.9114569" lon="51.4408511"/>
+  <node id="593221295" version="1" timestamp="2009-12-16T08:19:19Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="12.1395819" lon="50.860682"/>
+  <node id="593221296" version="1" timestamp="2009-12-16T08:19:19Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="12.1395819" lon="50.7460202"/>
+  <node id="593221301" version="1" timestamp="2009-12-16T08:19:19Z" uid="190196" user="FlorinMateiu" changeset="3385009" lat="11.9824072" lon="51.3575498"/>
+  <node id="1227807349" version="1" timestamp="2011-04-01T10:53:42Z" uid="160164" user="mahau" changeset="7734365" lat="11.1148622" lon="46.8979328"/>
+  <node id="1227807551" version="1" timestamp="2011-04-01T10:53:52Z" uid="160164" user="mahau" changeset="7734365" lat="11.4722547" lon="49.1834809"/>
+  <node id="1227807567" version="1" timestamp="2011-04-01T10:53:56Z" uid="160164" user="mahau" changeset="7734365" lat="10.7467924" lon="44.2668321"/>
+  <node id="1227807575" version="1" timestamp="2011-04-01T10:53:58Z" uid="160164" user="mahau" changeset="7734365" lat="10.9474345" lon="45.5455928"/>
+  <node id="1227807586" version="1" timestamp="2011-04-01T10:54:04Z" uid="160164" user="mahau" changeset="7734365" lat="12.0629284" lon="51.1030388"/>
+  <way id="46419240" version="3" timestamp="2011-04-01T10:54:15Z" uid="160164" user="mahau" changeset="7734365">
+    <nd ref="593221144"/>
+    <nd ref="593221142"/>
+    <nd ref="593221153"/>
+    <nd ref="593221149"/>
+    <nd ref="593221131"/>
+    <nd ref="593221136"/>
+    <nd ref="593221128"/>
+    <nd ref="1227807567"/>
+    <nd ref="593221140"/>
+    <nd ref="593221138"/>
+    <nd ref="593221154"/>
+    <nd ref="593221162"/>
+    <nd ref="593221157"/>
+    <nd ref="593221164"/>
+    <nd ref="1227807575"/>
+    <nd ref="593221178"/>
+    <nd ref="593221176"/>
+    <nd ref="593221174"/>
+    <nd ref="593221170"/>
+    <nd ref="593221168"/>
+    <nd ref="593221166"/>
+    <nd ref="593221180"/>
+    <nd ref="593221182"/>
+    <nd ref="1227807349"/>
+    <nd ref="593221187"/>
+    <nd ref="593221246"/>
+    <nd ref="593221244"/>
+    <nd ref="593221243"/>
+    <nd ref="593221242"/>
+    <nd ref="593221252"/>
+    <nd ref="593221248"/>
+    <nd ref="593221254"/>
+    <nd ref="593221258"/>
+    <nd ref="593221256"/>
+    <nd ref="593221260"/>
+    <nd ref="1227807551"/>
+    <nd ref="593221264"/>
+    <nd ref="593221269"/>
+    <nd ref="593221266"/>
+    <nd ref="593221270"/>
+    <nd ref="593221273"/>
+    <nd ref="593221278"/>
+    <nd ref="593221276"/>
+    <nd ref="593221296"/>
+    <nd ref="593221295"/>
+    <nd ref="1227807586"/>
+    <nd ref="593221301"/>
+    <nd ref="593221293"/>
+    <nd ref="593221291"/>
+    <nd ref="593221289"/>
+    <nd ref="593221285"/>
+    <nd ref="593221282"/>
+    <nd ref="593221280"/>
+    <nd ref="593221237"/>
+    <nd ref="593221241"/>
+    <nd ref="593221240"/>
+    <nd ref="593221232"/>
+    <nd ref="593221230"/>
+    <nd ref="593221239"/>
+    <nd ref="593221238"/>
+    <nd ref="593221228"/>
+    <nd ref="593221226"/>
+    <nd ref="593221222"/>
+    <nd ref="593221220"/>
+    <nd ref="593221218"/>
+    <nd ref="593221216"/>
+    <nd ref="593221214"/>
+    <nd ref="593221210"/>
+    <nd ref="593221208"/>
+    <nd ref="593221206"/>
+    <nd ref="593221204"/>
+    <nd ref="593221201"/>
+    <nd ref="593221196"/>
+    <nd ref="593221194"/>
+    <nd ref="593221192"/>
+    <nd ref="593221189"/>
+    <nd ref="593204504"/>
+    <nd ref="593204501"/>
+    <nd ref="593204499"/>
+    <nd ref="593204497"/>
+    <nd ref="593204495"/>
+    <nd ref="593204494"/>
+    <nd ref="593204492"/>
+    <nd ref="593204491"/>
+    <nd ref="593204490"/>
+    <nd ref="593204488"/>
+    <nd ref="593204487"/>
+    <nd ref="593204485"/>
+    <nd ref="593204483"/>
+    <nd ref="593204481"/>
+    <nd ref="593204479"/>
+    <nd ref="593204478"/>
+    <nd ref="593204477"/>
+    <nd ref="593204476"/>
+    <nd ref="593204474"/>
+    <nd ref="593204472"/>
+    <nd ref="593204470"/>
+    <nd ref="593204468"/>
+    <nd ref="593204467"/>
+    <nd ref="593204465"/>
+    <nd ref="593204464"/>
+    <nd ref="593204463"/>
+    <nd ref="593204460"/>
+    <nd ref="593204458"/>
+    <nd ref="593204456"/>
+    <nd ref="593204454"/>
+    <nd ref="593204453"/>
+    <nd ref="593204452"/>
+    <nd ref="593204449"/>
+    <nd ref="593204447"/>
+    <nd ref="593204445"/>
+    <nd ref="593204443"/>
+    <nd ref="593204441"/>
+    <nd ref="593204440"/>
+    <nd ref="593204439"/>
+    <nd ref="593204437"/>
+    <nd ref="593204434"/>
+    <nd ref="593204432"/>
+    <nd ref="593204430"/>
+    <nd ref="593204429"/>
+    <nd ref="593136659"/>
+    <tag k="admin_level" v="2"/>
+    <tag k="maritime" v="yes"/>
+    <tag k="boundary" v="administrative"/>
+  </way>
+  <relation id="192799" version="10" timestamp="2010-06-21T20:25:27Z" uid="51045" user="Geogast" changeset="5046251">
+    <member type="node" ref="34684808" role="capital"/>
+    <member type="way" ref="31304890" role=""/>
+    <member type="way" ref="31307142" role=""/>
+    <member type="way" ref="31316552" role=""/>
+    <member type="way" ref="31316551" role=""/>
+    <member type="way" ref="31886935" role=""/>
+    <member type="way" ref="31886922" role=""/>
+    <member type="way" ref="46419241" role=""/>
+    <member type="way" ref="46419240" role=""/>
+    <member type="way" ref="46418471" role=""/>
+    <member type="way" ref="32952714" role=""/>
+    <member type="way" ref="31304888" role=""/>
+    <tag k="name:sv" v="Somalia"/>
+    <tag k="name:en" v="Somalia"/>
+    <tag k="name:ru" v="Сомали"/>
+    <tag k="name:es" v="Somalia"/>
+    <tag k="name:de" v="Somalia"/>
+    <tag k="type" v="boundary"/>
+    <tag k="boundary" v="administrative"/>
+    <tag k="name:fr" v="Somalie"/>
+    <tag k="ISO3166-1" v="so"/>
+    <tag k="admin_level" v="2"/>
+    <tag k="name:nl" v="Somalië"/>
+    <tag k="name:sk" v="Somálsko"/>
+    <tag k="name" v="Soomaaliya"/>
+    <tag k="name:ar" v="الصومال"/>
+  </relation>
+</osm>
