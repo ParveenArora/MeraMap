@@ -1,9 +1,0 @@
-echo "Difference in files"
-diff default_postgresql.conf postgresql.conf
-
-echo "Creating patch............... "
-diff -u default_postgresql.conf postgresql.conf > postgresql.patch
-
-echo "Apply patch.............. "
-patch default_postgresql.conf < postgresql.patch
-echo "Done"

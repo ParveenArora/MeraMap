@@ -1,6 +1,0 @@
-Package: parveen
-Version: 002
-Architecture: i386
-Depends: 
-Maintainer: Parveen Arora (prince.parveen@gmail.com)
-Description: Test Debian Package
