@@ -8,10 +8,10 @@ DOWNLOAD=/home/parveen/Desktop
 MERAMAP_SCRIPT=/usr/local/meramap/scripts   #Meramap Scripts Directory
 
 #Variables which are defineing log files. These all log files will be in the /usr/local/meramap
-LOGFILE=logfiles/postgres_meramap.log       #Log file to which includes all the 
-LOGFILE_OSM2PGSQL=logfiles/osm2pgsql.log    #Log file to load osm data into pgsql 
-LOGFILE_INST=logfiles/meramap.log           #Whole Installation Log File
-LOGFILE_TILES=logfiles/tiles.log    
+LOGFILE=/usr/local/meramap/logfiles/postgres_meramap.log       #Log file to which includes all the 
+LOGFILE_OSM2PGSQL=/usr/local/meramap/logfiles/osm2pgsql.log    #Log file to load osm data into pgsql 
+LOGFILE_INST=/usr/local/meramap/logfiles/meramap.log           #Whole Installation Log File
+LOGFILE_TILES=/usr/local/meramap/logfiles/tiles.log    
 
 #Variables Defining Database Username and Database Name
 DBNAME=meramap_dba                 #PostgreSQL Database Name
