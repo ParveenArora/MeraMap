@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<osm version="0.6" generator="Osmosis SNAPSHOT-r25956M" xapi:planetDate="2011-08-14T12:06:03Z" xmlns:xapi="http://jxapi.openstreetmap.org/">
+<osm version="0.6" generator="Osmosis SNAPSHOT-r25956M" xapi:planetDate="2011-08-17T17:19:02Z" xmlns:xapi="http://jxapi.openstreetmap.org/">
   <bound box="-0.14145,51.48363,-0.03845,51.52637" origin="Osmosis SNAPSHOT-r25956M"/>
   <node id="593136659" version="1" timestamp="2009-12-16T07:02:12Z" uid="190196" user="FlorinMateiu" changeset="3384765" lat="-1.9244356" lon="41.7690167"/>
   <node id="593204429" version="1" timestamp="2009-12-16T08:04:46Z" uid="190196" user="FlorinMateiu" changeset="3384946" lat="-1.7231304" lon="41.881692"/>
