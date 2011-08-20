@@ -12,6 +12,7 @@ LOGFILE=/usr/local/meramap/logfiles/postgres_meramap.log       #Log file to whic
 LOGFILE_OSM2PGSQL=/usr/local/meramap/logfiles/osm2pgsql.log    #Log file to load osm data into pgsql 
 LOGFILE_INST=/usr/local/meramap/logfiles/meramap.log           #Whole Installation Log File
 LOGFILE_TILES=/usr/local/meramap/logfiles/tiles.log    
+LOGFILE_OSMOSIS=logfiles/osmosis.log
 
 #Variables Defining Database Username and Database Name
 DBNAME=meramap_dba                 #PostgreSQL Database Name
@@ -55,3 +56,16 @@ PATH_OF_TILE=/var/www/OSMAP/9
 
 SYM_LINK=/var/www/OSMAP
 TILES=/usr/local/meramap/mapnik_tool/tiles
+
+#OSMOSIS
+if [ ! -f $FILE_DEFAULT_STYLE ];
+then
+    FILE_DEFAULT_STYLE=$MERAMAP_SCRIPT/../$FILE_DEFAULT_FILE_STYLE
+fi
+OSM2PG=/usr/bin/osm2pgsql
+OSM_USER=root
+OSMIOS_CHANGES=changes.osc.gz
+WORKDIR_OSM=$MERAMAP/osmosis/.osmosis
+OSMOSIS=$WORKDIR_OSM/../bin/osmosis
+OSMOSIS_AREA_FILE=$WORKDIR_OSM/../area.txt
+
