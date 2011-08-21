@@ -5,7 +5,6 @@
 
 </head>
 <body>
-	
   <h1>EditMap</h1>
   <div id="mapdiv" style="width:600px; height:400px;">Map should be here</div>
 
@@ -40,14 +39,13 @@
     </div>
     <div id="submitControls">
       <button id="submitButton">Find Location </button>
-      <form action="/cgi-bin/customise_map/daemon/main/customise_map.sh" method="POST">
+      <form action="createmap.php" method="POST">
       <input type="submit" Value="Create Map">
       </form>
     </div>
   </div>
   
-<h4>Notice :<br> 1. Click on "Find Location" to select the points of map<br>
-2. Click on "Create Map" to generate customsize map.</h4>  
+  
   
 
   <script src='js/leaflet.js' ></script>

@@ -22,6 +22,7 @@ print new_northEast_lat
 print new_northEast_lng
 print new_minizoomlevel
 print new_maxzoomlevel
+
    
 import sys
 import fileinput
@@ -42,8 +43,6 @@ for line in open("scripts/z0_generate_tiles.py"):
    o.write(line + "\n") 
 o.close()
 print "it works"
-
-
 
 #Download Data 
 

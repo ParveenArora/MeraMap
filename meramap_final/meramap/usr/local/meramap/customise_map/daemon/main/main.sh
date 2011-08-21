@@ -1,9 +1,9 @@
 #!/bin/bash
 source scripts/variable.sh
 echo "Wait ............."
-sudo python $FILE_REPLACE_AND_DOWNLOAD  >> $LOGFILE_INST 2>&1 
+python $FILE_REPLACE_AND_DOWNLOAD # >> $LOGFILE_INST 2>&1 
 
-sudo ./$FILE_POSTGRE_DB  >> $LOGFILE_INST 2>&1 
+./$FILE_POSTGRE_DB  #>> $LOGFILE_INST 2>&1 
 
 if [ -f $FILE_DEFAULT_STYLE ];
 then
@@ -12,7 +12,7 @@ then
  echo "Its OK"
 fi
 
-./$SCRIPT_GENERATE_TILES >> $LOGFILE_INST 2>&1      #Script to generate map tiles.
+#./$SCRIPT_GENERATE_TILES >> $LOGFILE_INST 2>&1      #Script to generate map tiles.
 
 #./$SCRIPT_GEN_MAP                                   #script to show map on web browser. 
 echo "complete"
