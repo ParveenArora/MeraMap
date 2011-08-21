@@ -192,7 +192,7 @@ if __name__ == "__main__":
     except KeyError:
         mapfile = home + "/svn.openstreetmap.org/applications/rendering/mapnik/osm-local.xml"
     try:
-        tile_dir = os.environ['MAPNIK_TILE_DIR']
+        tile_dir = os.environ['MAPNIK_CUSTOMISE_TILE_DIR']
     except KeyError:
         tile_dir = home + "/osm/tiles/"
 

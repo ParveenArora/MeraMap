@@ -23,6 +23,10 @@ print new_northEast_lng
 print new_minizoomlevel
 print new_maxzoomlevel
 
+areafile = file("area.txt",'w')
+print >> areafile, new_southWest_lng,",",new_southWest_lat,",",new_northEast_lng,",",new_northEast_lat
+areafile.close()
+
    
 import sys
 import fileinput
@@ -34,15 +38,17 @@ o = open("scripts/output.py","a") #open for append
 # output store in output.py file
 for line in open("scripts/z0_generate_tiles.py"):
 #for line in open("z0_generate_tiles.py"):
-   line = line.replace("old_southWest_lng",new_southWest_lng)
-   line = line.replace("old_southWest_lat",new_southWest_lat)
-   line = line.replace("old_northEast_lng",new_northEast_lng)
-   line = line.replace("old_northEast_lat",new_northEast_lat)
+   line = line.replace("old_southWest_lat",new_southWest_lng)
+   line = line.replace("old_southWest_lng",new_southWest_lat)
+   line = line.replace("old_northEast_lat",new_northEast_lng)
+   line = line.replace("old_northEast_lng",new_northEast_lat)
    line = line.replace("old_maxzoomlevel",new_maxzoomlevel)
    line = line.replace("old_minizoomlevel",new_minizoomlevel)
    o.write(line + "\n") 
 o.close()
 print "it works"
+
+
 
 #Download Data 
 
@@ -155,7 +161,7 @@ new_northEast_lng = float(new_northEast_lng)
 
 
 if __name__ == "__main__":
-    ll = (new_southWest_lat,new_southWest_lng,new_northEast_lat,new_northEast_lng)
+    ll = (new_southWest_lng,new_southWest_lat,new_northEast_lng,new_northEast_lat)
     downloadOsmData(ll)
 
 

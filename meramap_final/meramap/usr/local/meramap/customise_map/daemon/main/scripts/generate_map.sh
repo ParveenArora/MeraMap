@@ -5,7 +5,7 @@ source scripts/variable.sh
 
 #sudo cp -r map /var/www/meramap/
 
-if [ -d $SYM_LINK ]; then rm $SYM_LINK; fi
+if [ -d $SYM_LINK ]; then sudo rm -rf $SYM_LINK; fi
 
 sudo ln -s $TILES $SYM_LINK
 
