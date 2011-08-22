@@ -67,8 +67,7 @@ OSM_USER=root
 OSMIOS_CHANGES=changes.osc.gz
 WORKDIR_OSM=$MERAMAP/osmosis/.osmosis
 OSMOSIS=$WORKDIR_OSM/../bin/osmosis
-OSMOSIS_AREA_FILE=$WORKDIR_OSM/../area.txt
+OSMOSIS_AREA_FILE=/usr/local/meramap/customise_map/daemon/main/area.txt
 
 LOGFOLDER=/usr/local/meramap/logfiles
-
 
