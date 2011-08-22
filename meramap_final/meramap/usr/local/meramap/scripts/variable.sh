@@ -69,3 +69,6 @@ WORKDIR_OSM=$MERAMAP/osmosis/.osmosis
 OSMOSIS=$WORKDIR_OSM/../bin/osmosis
 OSMOSIS_AREA_FILE=$WORKDIR_OSM/../area.txt
 
+LOGFOLDER=/usr/local/meramap/logfiles
+
+
