@@ -29,7 +29,7 @@
 #-----------------------------------------------------------------------------
 # This is the name of the *local* version of the Mapnik map file after it has
 # been run through the cutomize-mapnik-map script.
-source ../../scripts/variable.sh
+source /usr/local/meramap/scripts/variable.sh
 
 export MAPNIK_MAP_FILE=/usr/local/meramap/mapnik_tool/osm.xml
 
