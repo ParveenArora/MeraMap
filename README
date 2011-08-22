@@ -36,7 +36,18 @@ sudo apt-get -q 2 upgrade
 sudo dpkg -i meramap.deb
 sudo apt-get -f -q 2 install
 
-Customisation Package to customise this example map will be released soon.
+
+You can also create your our devlopment debian package, by the following method:
+
+1. Move to the MeraMap github directory:
+cd MeraMap/meramap_final
+
+2. Then Make the debian package from the following command:
+dpkg --build meramap
+
+Be sure that meramap directory is present there, then it will build meramap.deb
 
 
+Customisation Package is ready with features of selection of Map generation area through web browser and to select zoom levels of which user wants to generate the map.
 
+After the selection is done you may need to run the customisation's final script by yourself.
