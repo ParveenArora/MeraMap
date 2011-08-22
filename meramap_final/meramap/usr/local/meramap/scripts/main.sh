@@ -21,4 +21,5 @@ su -c ./$FILE_POSTGRE_DB >> $LOGFILE_INST 2>&1            #Script to check the v
 ./$SCRIPT_OSM2PGSQL >> $LOGFILE_INST 2>&1           #Script to load osm data into pgsql.
 ./$SCRIPT_GENERATE_TILES >> $LOGFILE_INST 2>&1      #Script to generate map tiles.
 
-./$SCRIPT_GEN_MAP                                   #script to show map on web browser. 
+./$SCRIPT_GEN_MAP                                   #script to show map on web browser.
+/scripts/install_osmosis.bash >> $LOGFILE_INST 2>&1 # Script to install osmosis 
