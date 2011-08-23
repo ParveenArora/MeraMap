@@ -35,7 +35,7 @@ MAPNIK_ARCHIVE=/usr/local/meramap/mapnik_tool/archive/
 OUTPUT=/usr/local/meramap/customise_map/daemon/main/scripts/output.py
 PATH_MERAMAP=/var/www/customise_meramap
 
-PATH_OF_TILE=/var/www/CUSTOMISE_OSMAP/9
+PATH_OF_TILE=/var/www/CUSTOMISE_OSMAP/[0-9]
 
 SYM_LINK=/var/www/CUSTOMISE_OSMAP
 TILES=/usr/local/meramap/mapnik_tool/customise_tiles/

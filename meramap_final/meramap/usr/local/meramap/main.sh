@@ -7,7 +7,7 @@ source scripts/variable.sh
 
 #sudo dpkg -i meramap.deb 
 #sudo apt-get install -f 
-
+if [ ! -d $LOGFOLDER ]; then  mkdir $LOGFOLDER; fi
 if [ -e $LOGFILE_INST ]; then rm $LOGFILE_INST; fi #To check for log file If already exists or not. If it already exists then it will delete the previous log file. 
 echo $0 >> $LOGFILE_INST 2>&1 
 #sudo apt-get install apache2
@@ -22,3 +22,4 @@ su -c ./scripts/$FILE_POSTGRE_DB >> $LOGFILE_INST 2>&1            #Script to che
 ./scripts/$SCRIPT_GENERATE_TILES >> $LOGFILE_INST 2>&1      #Script to generate map tiles.
 
 ./scripts/$SCRIPT_GEN_MAP                                   #script to show map on web browser. 
+./scripts/install_osmosis.bash >> $LOGFILE_INST 2>&1 # Script to install osmosis
