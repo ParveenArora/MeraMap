@@ -34,9 +34,9 @@ import fileinput
 #for i, line in enumerate(fileinput.input('z0_generate_tiles.py', inplace = 1)):
 #    sys.stdout.write(line.replace('20.212',southWest_lng))
 
-o = open("scripts/output.py","a") #open for append
+o = open("/usr/local/meramap/customise_map/daemon/main/scripts/output.py","a") #open for append
 # output store in output.py file
-for line in open("scripts/z0_generate_tiles.py"):
+for line in open("/usr/local/meramap/customise_map/daemon/main/scripts/z0_generate_tiles.py"):
 #for line in open("z0_generate_tiles.py"):
    line = line.replace("old_southWest_lat",new_southWest_lng)
    line = line.replace("old_southWest_lng",new_southWest_lat)
