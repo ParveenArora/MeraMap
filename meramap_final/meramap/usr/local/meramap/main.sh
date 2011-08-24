@@ -1,4 +1,4 @@
-#!/bin/bash
+#/bin/bash
 source scripts/variable.sh
 
 #if [ -e $MERAMAP_DEB  ]; then rm $MERAMAP_DEB; fi #To check to If meramap.deb

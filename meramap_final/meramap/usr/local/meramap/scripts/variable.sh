@@ -54,10 +54,23 @@ PATH_MERAMAP=/var/www/meramap
 
 PATH_OF_TILE=/var/www/OSMAP/9
 
+#**********Links*************
+
 SYM_LINK=/var/www/OSMAP
 TILES=/usr/local/meramap/mapnik_tool/tiles
 
+CUSTOM_LINK=/var/www/customise_map
+
+CUSTOM_TILES=/usr/local/meramap/mapnik_tool/customise_tiles
+CUSTOM_TILES_LINK=/var/www/CUSTOM_TILES
+
+#**************************************
+
+
+
 #OSMOSIS
+#**********************************************
+
 if [ ! -f $FILE_DEFAULT_STYLE ];
 then
     FILE_DEFAULT_STYLE=$MERAMAP_SCRIPT/../$FILE_DEFAULT_FILE_STYLE
@@ -70,4 +83,4 @@ OSMOSIS=$WORKDIR_OSM/../bin/osmosis
 OSMOSIS_AREA_FILE=/usr/local/meramap/customise_map/daemon/main/area.txt
 
 LOGFOLDER=/usr/local/meramap/logfiles
-
+#************************************************************
