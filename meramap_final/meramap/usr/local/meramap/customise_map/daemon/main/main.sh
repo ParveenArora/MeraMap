@@ -1,5 +1,5 @@
 #!/bin/bash
-source scripts/variable.sh
+source /usr/local/meramap/customise_map/daemon/main/scripts/variable.sh
 echo "Wait ............."
 if [ -f $OUTPUT ]; then rm -r $OUTPUT; fi
 sudo python $FILE_REPLACE_AND_DOWNLOAD  >> $LOGFILE_INST 2>&1 
