@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "meramap-api Debian Package Installing....."
-cd /usr/local/meramap-api/
+cd /usr/local/meramap-api/scripts
 ./main.sh
