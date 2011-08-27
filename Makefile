@@ -6,3 +6,6 @@ meramap.deb:
 meramap-api.deb:
 	dpkg --build meramap-api
 
+clean:
+	rm meramap-api.deb meramap_final/meramap.deb
+

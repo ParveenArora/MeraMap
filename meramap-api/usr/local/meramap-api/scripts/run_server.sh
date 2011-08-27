@@ -3,6 +3,8 @@ SCRIPTDIR="$( cd -P "$( dirname "$0" )" && pwd )"
 echo "scriptdir = $SCRIPTDIR"
 . $SCRIPTDIR/variables.sh
 
+if [ -e $LOGFILE_SRV ]; then rm $LOGFILE_SRV; fi 
+
 echo "Starting ruby/rails test Server...."
 cd $MERAMAP_API/rails
 ruby script/server >> $LOGFILE_SRV 2>&1 &
