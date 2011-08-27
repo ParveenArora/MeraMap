@@ -9,9 +9,11 @@ cd $MERAMAP_API
 DBTEMP=$MERAMAP_API/rails/config/postgres.example.database.yml
 DBCONF=$MERAMAP_API/rails/config/database.yml
 
+if [ -e $DBCONF ]; then rm $DBCONF; fi
 #This first strips any leading white space or # character before username.
 #then replaces username with the desired value.
-sed -e 's/^[ \t#]*username//' -e 's/username./  username: $DBUSER #/g' $DBTEMP > $DBCONF
+sed -e 's/^[ \t#]*//' -e "s/username./username:$DBUSER #/g" -e "s/password./password: #/g" $DBTEMP > $DBCONF
+
 
 #sed -e 's/.username./username: $DBUSER/g' $DBTEMP > $DBCONF
     
