@@ -14,6 +14,9 @@ echo "Installing OSM rails port and other OSM code...."
 echo "Populating database with sample data...."
 . $SCRIPTDIR/populate_sample_db.sh >> $LOGFILE_INST 2>&1
 
+echo "Starting Development Server...."
+. $SCRIPTDIR/run_server.sh >> $LOGFILE_INST 2>&1
+
 echo "Setup Complete - you should see a copy of the OpenStreetMap.org website at http://localhost:3000"
 echo ""
 echo "If you are having problems, have a look at the log file at $LOGFILE_INST."
