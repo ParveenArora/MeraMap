@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "Mera Map Debian Package Installing....."
-cd /usr/local/meramap/
+echo "meramap-api Debian Package Installing....."
+cd /usr/local/meramap-api/
 ./main.sh

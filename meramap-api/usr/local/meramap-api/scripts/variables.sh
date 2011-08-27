@@ -1,6 +1,8 @@
 #!/bin/sh
 MERAMAP_API=/usr/local/meramap-api     # MeraMap Directory in User's System
 
+LOGFILE_INST=/usr/local/meramap-api/logfiles/install.log
+
 RAILSDIR=$MERAMAP_API/rails
 
 DBUSER=openstreetmap
