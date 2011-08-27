@@ -4,6 +4,9 @@ SCRIPTDIR="$( cd -P "$( dirname "$0" )" && pwd )"
 echo "scriptdir = $SCRIPTDIR"
 . $SCRIPTDIR/variables.sh
 
+################################################################
+# Download rails port code
+###############################################################
 if [ -e $MERAMAP_API/rails ]; then
     echo "updating rails port source code"
     cd $MERAMAP_API/rails
@@ -14,6 +17,9 @@ else
     git clone git://git.openstreetmap.org/rails.git
 fi
 
+################################################################
+# Configure rails port
+################################################################
 DBTEMP=$MERAMAP_API/rails/config/postgres.example.database.yml
 DBCONF=$MERAMAP_API/rails/config/database.yml
 APPTEMP=$MERAMAP_API/rails/config/example.application.yml
@@ -49,6 +55,21 @@ rake db:migrate
 echo "production database..."
 env RAILS_ENV=production rake db:migrate
 
-echo "Running tests..."
-rake test
+#echo "Running tests..."
+#rake test
+
+
+###################################################################
+# Install osmosis
+###################################################################
+cd $MERAMAP_API
+if [ -e /usr/local/bin/osmosis ]; then
+   echo "You already have a local version of osmosis in /usr/local/bin - using that"
+else
+    wget http://dev.openstreetmap.org/~bretth/osmosis-build/osmosis-latest.tgz -O osmosis-latest.tgz
+    tar -xvf osmosis-latest.tgz
+    ln -s $MERAMAP_API/osmosis*/bin/osmosis /usr/local/bin/osmosis
+fi
+
+
 echo "install_osm_code.sh complete!!"
