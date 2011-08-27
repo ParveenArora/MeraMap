@@ -33,4 +33,8 @@ gem install rack-openid
 echo "installing oauth...."
 gem install oauth
 
+echo "installing rmagick and sanitize, which do not seem to install automatically..."
+gem install rmagick
+gem install sanitize
+
 echo "install_ruby_gems.sh complete!!"

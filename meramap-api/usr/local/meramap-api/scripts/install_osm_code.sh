@@ -42,4 +42,13 @@ echo "installing gems libraries...."
 cd $MERAMAP_API/rails
 rake gems:install
 
+echo "Setting up the databases...."
+cd $MERAMAP_API/rails
+echo "development database..."
+rake db:migrate
+echo "production database..."
+env RAILS_ENV=production rake db:migrate
+
+echo "Running tests..."
+rake test
 echo "install_osm_code.sh complete!!"
