@@ -4,12 +4,13 @@ echo "#######################################################"
 echo "# MeraMap-Api - OpenStreetMap API Server Installation #"
 echo "#######################################################"
 echo ""
-echo "You can track progress during installation by monitoring $LOGFILE_INST"
-echo ""
 
 SCRIPTDIR="$( cd -P "$( dirname "$0" )" && pwd )"
 echo "scriptdir = $SCRIPTDIR"
 . $SCRIPTDIR/variables.sh
+
+echo "You can track progress during installation by monitoring $LOGFILE_INST"
+echo ""
 
 if [ -e $LOGFILE_INST ]; then rm $LOGFILE_INST; fi 
 
