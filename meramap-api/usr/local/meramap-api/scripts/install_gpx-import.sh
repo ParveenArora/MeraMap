@@ -15,6 +15,8 @@ if [ -e $MERAMAP_API/gpx-import]; then
 else
     echo "downloading gpx-import daemon source code from github"
     cd $MERAMAP_API
+
+    #*******NOTE - THIS IS G. JONES' VERSION, NOT THE OFFICIAL OSM ONE******
     git clone git://github.com/jones139/gpx-import.git
 fi
 
@@ -31,6 +33,7 @@ if [ -e $APPCONF ]; then
 else
     cp $APPTEMP $APPCONF
     echo "Configuring gpx-import daemon in $APPCONF"
+    mkdir -p $MERAMAP_API/gpx
     mkdir -p $PATH_GPX_TRACES
     mkdir -p $PATH_GPX_IMAGES
 
@@ -39,8 +42,8 @@ else
     sed -i'.bak' -e "s|.*setting PATH_TEMPLATES.*|setting PATH_TEMPLATES $MERAMAP_API/gpx-import/templates|g" $APPCONF
     sed -i'.bak' -e "s|.*setting PGSQL_USER.*|setting PGSQL_USER $DBUSER|g" $APPCONF
     sed -i'.bak' -e "s|.*setting PGSQL_PASS.*|setting PGSQL_PASS $DBPASS|g" $APPCONF
-    sed -i'.bak' -e "s|.*setting LOG_FILE.*|setting LOG_FILE $MERAMAP_API/gpx-import/gpx-import.log|g" $APPCONF
-    sed -i'.bak' -e "s|.*setting PID_FILE.*|setting PID_FILE $MERAMAP_API/gpx-import/gpx-import.pid|g" $APPCONF
+    sed -i'.bak' -e "s|.*setting LOG_FILE.*|setting LOG_FILE $MERAMAP_API/gpx/gpx-import.log|g" $APPCONF
+    sed -i'.bak' -e "s|.*setting PID_FILE.*|setting PID_FILE $MERAMAP_API/gpx/gpx-import.pid|g" $APPCONF
     sed -i'.bak' -e "s|\$\@|$MERAMAP_API/gpx-import/src/gpx-import|g" $APPCONF
 fi
 

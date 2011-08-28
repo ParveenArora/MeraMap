@@ -40,8 +40,14 @@ if [ -e $APPCONF ]; then
     echo "**** $APPCONF already exists, not changing it! ****"
 else
     echo "Configuring API URLs etc. in $APPCONF"
+    cp $APPTEMP $APPCONF
     # replaces 'openstreetmap' with 'meramap-api' in the URLs etc.
-    sed -e "s/openstreetmap/meramap-api #/g" $APPTEMP > $APPCONF
+    sed -i'.bak' -e "s/openstreetmap/meramap-api #/g" $APPCONF
+    # set the GPX traces and images directories.
+    mkdir -p $PATH_GPX_TRACES
+    sed -i'.bak' -e "s|.*gpx_trace_dir.*|  gpx_trace_dir: $PATH_GPX_TRACES|g" $APPCONF
+    mkdir -p $PATH_GPX_IMAGES
+    sed -i'.bak' -e "s|.*gpx_image_dir.*|  gpx_image_dir: $PATH_GPX_IMAGES|g" $APPCONF
 fi
 
 echo "installing gems libraries...."
@@ -74,5 +80,5 @@ fi
 ###################################################################
 # Install and configure gpx-import daemon
 ###################################################################
-$MERAMAP_API/scripts/install_gpx-import.sh
+$SCRIPTDIR/install_gpx-import.sh
 echo "install_osm_code.sh complete!!"

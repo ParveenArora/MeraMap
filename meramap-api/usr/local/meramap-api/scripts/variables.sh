@@ -6,8 +6,8 @@ LOGFILE_SRV=$MERAMAP_API/logfiles/server.log
 
 RAILSDIR=$MERAMAP_API/rails
 
-PATH_GPX_TRACES=$MERAMAP_API/gpx-import/traces
-PATH_GPX_IMAGES=$MERAMAP_API/gpx-import/images
+PATH_GPX_TRACES=$MERAMAP_API/gpx/traces
+PATH_GPX_IMAGES=$MERAMAP_API/gpx/images
 
 DBUSER=openstreetmap
 DBPASS=1234
