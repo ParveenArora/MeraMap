@@ -33,6 +33,7 @@ else
     echo "downloading rails port source code from git.openstreetmap.org"
     cd $MERAMAP_API
     git clone git://git.openstreetmap.org/rails.git
+    chmod 0666 $MERAMAP_API/rails/log/*
 fi
 
 ################################################################
