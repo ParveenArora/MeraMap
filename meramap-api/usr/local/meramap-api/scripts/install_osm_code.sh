@@ -71,5 +71,8 @@ else
     ln -s $MERAMAP_API/osmosis*/bin/osmosis /usr/local/bin/osmosis
 fi
 
-
+###################################################################
+# Install and configure gpx-import daemon
+###################################################################
+$MERAMAP_API/scripts/install_gpx-import.sh
 echo "install_osm_code.sh complete!!"
