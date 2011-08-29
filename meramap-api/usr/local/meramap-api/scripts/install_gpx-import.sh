@@ -17,7 +17,9 @@
 #    You should have received a copy of the GNU General Public License
 #    along with Meramap-api.  If not, see <http://www.gnu.org/licenses/>.
 ############################################################################
-echo "install_osm_code.sh - Installing OSM Code......"
+echo ""
+echo "**********************************************************"
+echo "install_gpx-import.sh - Installing gpx-import daemon......"
 SCRIPTDIR="$( cd -P "$( dirname "$0" )" && pwd )"
 echo "scriptdir = $SCRIPTDIR"
 . $SCRIPTDIR/variables.sh
@@ -26,7 +28,7 @@ echo "scriptdir = $SCRIPTDIR"
 ###################################################################
 # Install gpx-import daemon
 ###################################################################
-if [ -e $MERAMAP_API/gpx-import]; then
+if [ -e $MERAMAP_API/gpx-import ]; then
     echo "updating gpx-import daemon source code"
     cd $MERAMAP_API/gpx-import
     git pull
@@ -76,6 +78,7 @@ fi
 echo "Starting gpx-import daemon"
 /etc/init.d/gpx-import start
 
-echo "Done!"
+echo "install_gpx-import.sh complete!"
+echo ""
 
 

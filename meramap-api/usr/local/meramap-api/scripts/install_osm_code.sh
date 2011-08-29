@@ -33,55 +33,11 @@ else
     echo "downloading rails port source code from git.openstreetmap.org"
     cd $MERAMAP_API
     git clone git://git.openstreetmap.org/rails.git
+    mkdir 0666 $MERAMAP_API/rails/log
     chmod 0666 $MERAMAP_API/rails/log/*
 fi
 
-################################################################
-# Configure rails port
-################################################################
-DBTEMP=$MERAMAP_API/rails/config/postgres.example.database.yml
-DBCONF=$MERAMAP_API/rails/config/database.yml
-APPTEMP=$MERAMAP_API/rails/config/example.application.yml
-APPCONF=$MERAMAP_API/rails/config/application.yml
 
-if [ -e $DBCONF ]; then 
-    echo "****$DBCONF already exists, not changing it! ****"
-else
-    echo "Configuring database settings in $DBCONF"
-    #This first strips any leading white space or # character before username.
-    #then replaces username with the desired value.
-#    sed -e 's/^[#]*//' -e "s/username./username: $DBUSER #/g" -e "s/password./password: $DBPASS #/g" $DBTEMP > $DBCONF
-#    sed -e 's/^[ \t#]*//' -e "s/username./  username:$DBUSER #/g" -e "s/password./  password:$DBPASS #/g" $DBTEMP > $DBCONF
-    sed -e "s/.*username.*/  username: $DBUSER/g" -e "s/.*password.*/  password: $DBPASS/g" $DBTEMP > $DBCONF
-fi
-
-if [ -e $APPCONF ]; then
-    echo "**** $APPCONF already exists, not changing it! ****"
-else
-    echo "Configuring API URLs etc. in $APPCONF"
-    cp $APPTEMP $APPCONF
-    # replaces 'openstreetmap' with 'meramap-api' in the URLs etc.
-    sed -i'.bak' -e "s/openstreetmap/meramap-api #/g" $APPCONF
-    # set the GPX traces and images directories.
-    mkdir -p $PATH_GPX_TRACES
-    sed -i'.bak' -e "s|.*gpx_trace_dir.*|  gpx_trace_dir: $PATH_GPX_TRACES|g" $APPCONF
-    mkdir -p $PATH_GPX_IMAGES
-    sed -i'.bak' -e "s|.*gpx_image_dir.*|  gpx_image_dir: $PATH_GPX_IMAGES|g" $APPCONF
-fi
-
-echo "installing gems libraries...."
-cd $MERAMAP_API/rails
-rake gems:install
-
-echo "Setting up the databases...."
-cd $MERAMAP_API/rails
-echo "development database..."
-rake db:migrate
-echo "production database..."
-env RAILS_ENV=production rake db:migrate
-
-#echo "Running tests..."
-#rake test
 
 
 ###################################################################
@@ -96,8 +52,5 @@ else
     ln -s $MERAMAP_API/osmosis*/bin/osmosis /usr/local/bin/osmosis
 fi
 
-###################################################################
-# Install and configure gpx-import daemon
-###################################################################
-$SCRIPTDIR/install_gpx-import.sh
 echo "install_osm_code.sh complete!!"
+

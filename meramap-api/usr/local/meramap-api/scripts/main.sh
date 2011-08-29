@@ -39,6 +39,10 @@ echo "Installing ruby gems libraries...."
 /bin/sh $SCRIPTDIR/install_ruby_gems.sh >> $LOGFILE_INST 2>&1
 echo "Installing OSM rails port and other OSM code...."
 /bin/sh $SCRIPTDIR/install_osm_code.sh >> $LOGFILE_INST 2>&1
+echo "Configuring the OSM Rails port as per variables.sh...."
+/bin/sh $SCRIPTDIR/configure_osm_code.sh >> $LOGFILE_INST 2>&1
+echo "Installing gpx-import daemon"
+/bin/sh $SCRIPTDIR/install_gpx-import.sh >> $LOGFILE_INST 2>&1
 echo "Populating database with sample data...."
 /bin/sh $SCRIPTDIR/populate_sample_db.sh >> $LOGFILE_INST 2>&1
 
