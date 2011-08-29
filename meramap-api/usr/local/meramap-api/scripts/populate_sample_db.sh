@@ -34,7 +34,7 @@ else
 fi
 
 echo "Reseting database counters...."
-psql -d openstreetmap -U $DBUSER -f $SCRIPTDIR/reset_autoincrement_tables.sql
+PGPASSWORD=$DBPASS psql -d openstreetmap -U $DBUSER -f $SCRIPTDIR/reset_autoincrement_tables.sql
 
 echo "Importing data into database..."
 osmosis --read-xml-0.6 file="$OSMFILE" --write-apidb-0.6 populateCurrentTables=yes host="localhost" database="openstreetmap" user="$DBUSER" password="$DBPASS" validateSchemaVersion=no
