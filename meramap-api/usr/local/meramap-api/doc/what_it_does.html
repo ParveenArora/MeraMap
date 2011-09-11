@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Meramap_Api - What it Does</title>
+</head>
+<body>
+<h1>Meramap-Api - What it Does</h1>
+<h2>Introduction</h2>
+<p>Meramap-api is a debian package to install an 
+<a href="http://www.openstreetmap.org">OpenStreetMap</a> API Server, also known as the <a href="http://wiki.openstreetmap.org/wiki/Rails_port">Rails Port</a>.
+Note that this means it is installing a copy of the OpenStreetMap Web Site, and the database interface to allow editing of OpenStreetMap Data stored locally on your own server.   It does NOT generate map tiles to display on web pages - for that you need meramap.deb, not meramap-api.deb.
+</p>
+<p>Unless you know what the above paragraph is talking about, you probably do not want to install meramap-api!!!</p>
+
+<h2>Meramap-api Components</h2>
+<p>Meramap-Api installs and configures the following components for you - it is basically following the  <a href="http://wiki.openstreetmap.org/wiki/Rails_port">Rails Port</a> installation in structions.
+</p>
+<ol>
+<li>Dependency Checks - the Debian Package ensures that you have all the required packages installed on your system before it starts, and fails with an error if not.</li>
+<li>Configures postgresql database, creates databases and a user.</li>
+<li>Ruby - the ruby programming language, which conrols the OSM web site.</li>
+<li>Ruby Gems - the ruby library system that is used to add other components to ruby.</li>
+<li>The OSM Rails Port - this is downloaded from the OSM git repository, and configured automatically, as specified in /usr/local/meramap-api/scripts/variables.sh</li>
+<li>Osmosis - the tool to import openstreetmap data into the database.</li>
+<li>gpx-import - the deaemon that processes gpx files uploaded to the web site.</li>
+<li>It installs a small sample of OSM data into the database for testing.</li>
+<li>Starts the ruby rails development server to try out the new system.</li>
+</ol>
+</body>
+</html>

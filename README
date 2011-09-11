@@ -1,3 +1,5 @@
+Meramap
+=======
 This will be a a one complete package , That will automatically install all the packages with Install Script required to set up own customised server which will update automatically with sync. of OpenStreetMap data for an area specified by implementor, It will also suggest him/her and will also give a option to choose default options i.e weekly bases , with easy user interface and browser based customisation of Map Style, adding of Icons, local language and additional search feature.
 
 MeraMap Debian package is reqady to install on your systems. Follow the instructions given below to install the complete package.
@@ -51,3 +53,7 @@ Be sure that meramap directory is present there, then it will build meramap.deb
 Customisation Package is ready with features of selection of Map generation area through web browser and to select zoom levels of which user wants to generate the map.
 
 After the selection is done you may need to run the customisation's final script by yourself.
+
+Meramap-api
+===========
+Meramap-api is a similar package to install an OSM API server (aka 'The Rails Port').
